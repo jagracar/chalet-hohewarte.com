@@ -1,0 +1,22 @@
+/*
+ * General layout
+ */
+// Susy map
+$susy: (
+	columns: 12,
+	container: 90%,
+	global-box-sizing: "border-box",
+	/*
+	debug: (
+		image: show,
+		output: overlay
+	)
+	*/
+);
+
+// Box sizing model 
+@include border-box-sizing;
+
+.main-container, footer {
+	@include container;
+}
