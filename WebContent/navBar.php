@@ -2,7 +2,7 @@
 
 <nav>
 	<div class="nav-logo">
-		<a href="<?php echo $homeDir;?>index.php" class="nav-item is-logo-item">Chalet Hohe Warte</a>
+		<a href="<?php echo $homeDir;?>/" class="nav-item is-logo-item">Chalet Hohe Warte</a>
 	</div>
 
 	<div class="nav-menu-wrapper">
