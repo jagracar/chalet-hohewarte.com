@@ -154,7 +154,7 @@ nav {
 		min-width: $nav-menu-item-min-width;
 		@include border-radius($nav-border-radius);
 	}
-  
+    
 	@include breakpoint(max-width $M) {
 		&.is-list-toogle-item {
 			display: none;
@@ -171,6 +171,17 @@ nav {
     
 			&:hover {
  				background-color: $nav-active-item-hover-bg-color;
+			}
+		}
+    
+		&.is-reservation-item {
+			margin-left: 2em;
+			color: $nav-reservation-item-color;
+			background-color: $nav-reservation-item-bg-color;
+    
+			&:hover {
+				color: $nav-reservation-item-hover-color;
+ 				background-color: $nav-reservation-item-hover-bg-color;
 			}
 		}
     

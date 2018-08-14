@@ -2,7 +2,7 @@
 
 <nav>
 	<div class="nav-logo">
-		<a href="<?php echo $homeDir;?>/" class="nav-item is-logo-item">Chalet Hohe Warte</a>
+		<a href="<?php echo $homeDir;?>/en" class="nav-item is-logo-item">Chalet Hohe Warte</a>
 	</div>
 
 	<div class="nav-menu-wrapper">
@@ -17,17 +17,8 @@
 						class="nav-item <?php if($page == 'pictures') { echo $active; }?>">Pictures</a></li>
 					<li><a href="<?php echo $homeDir;?>contact.php"
 						class="nav-item <?php if($page == 'contact') { echo $active; }?>">Contact</a></li>
-				</ul>
-			</div>
-
-			<div class="nav-block is-secondary-block">
-				<span class="nav-item is-list-toogle-item">Social</span>
-				<ul class="nav-list">
-					<li><a href="https://github.com/jagracar" class="nav-item github-icon">GitHub</a></li>
-					<li><a href="http://www.facebook.com/jgraciacarpio" class="nav-item facebook-icon">Facebook</a></li>
-					<li><a href="https://twitter.com/jagracar" class="nav-item twitter-icon">Twitter</a></li>
-					<li><a href="https://vimeo.com/jagracar" class="nav-item vimeo-icon">Vimeo</a></li>
-					<li><a href="https://www.linkedin.com/in/javiergraciacarpio" class="nav-item linkedin-icon">LinkedIn</a></li>
+					<li><a href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/wildkogel-arena/zillertal-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-691.html"
+						class="nav-item is-reservation-item" target="_blank">Reservations</a></li>
 				</ul>
 			</div>
 		</div>
