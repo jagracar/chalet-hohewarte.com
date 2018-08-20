@@ -1,22 +1,22 @@
 <?php
 	// General php variables
-	$page = 'bilder';
+	$page = 'activities';
 	$homeDir = '';
-	$alternative = 'pictures.php';
+	$alternative = 'aktivitaeten.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Hohe Warte, Ferienwohnung, Bilder">
-<meta name="description" content="Bilder Chalet Hohe Warte">
+<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Hohe Warte, holiday house, activities">
+<meta name="description" content="Chalet Hohe Warte activities">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative; ?>">
+<link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative; ?>">
 
-<title>Bilder - Chalet Hohe Warte</title>
+<title>Activities - Chalet Hohe Warte</title>
 
 <!-- CSS files -->
 <link rel="stylesheet" href="<?php echo $homeDir; ?>../css/styles.css" />
@@ -32,12 +32,14 @@
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container" onclick="return true">
+	<div class="main-container">
 		<header>
-			<h1>Bilder</h1>
+			<h1>Activities</h1>
 		</header>
-		
-		<img src="../pictures/fig1.jpg"/>
+
+    	<h2>Winter</h2>
+
+    	<h2>Summer</h2>
 
 	</div>
 

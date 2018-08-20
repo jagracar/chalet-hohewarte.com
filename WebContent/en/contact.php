@@ -2,6 +2,7 @@
 	// General php variables
 	$page = 'contact';
 	$homeDir = '';
+	$alternative = 'kontakt.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
 <meta name="description" content="Chalet Hohe Warte contact information">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/kontakt.php">
+<link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative; ?>">
 
 <title>Contact - Chalet Hohe Warte</title>
 

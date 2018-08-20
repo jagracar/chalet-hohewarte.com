@@ -60,70 +60,71 @@ footer {
  */
 nav {
 	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
 	width: 100%;
 	background-color: $nav-bg-color;
 	@include box-shadow(0px 3px 3px $nav-shadow-color);
-  
+
 	a:hover, a:focus {
 		text-decoration: none;
 	}
+
+	ul {
+		margin: 0;
+		padding: 0;	
+	}
+
+	li {
+		list-style-type: none;
+	}
 }
 
-.nav-logo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
+.nav-header {
 	margin: $nav-margin 0;
-  
+	font-size: 1.0em;
+
 	@include breakpoint($M) {
-		width: $nav-logo-width;
+		display: inline-block;
+		width: $nav-header-width;
 	}
 }
 
 .nav-menu-wrapper {
-	display: table;
-	margin: $nav-margin;
-  
-	&:hover {
-		margin-bottom: 0;
-		padding-bottom: $nav-margin;
-	}
-  
-	@include breakpoint($M) {
-		margin-left: $nav-logo-width;
-	}
-}
+	margin: $nav-margin 0;
 
-.nav-blocks-wrapper {
 	@include breakpoint(max-width $M) {
 		position: absolute;
-		top: 100%;
-		left: auto;
-		overflow: hidden;
-		background-color: $nav-bg-color;
-		@include border-bottom-radius($nav-border-radius);
+		top: 0;
+		left: 0;
+
+		&:hover {
+			width: 100%;
+		}
+		
+		&:hover .is-menu-item {
+			background-color: $nav-item-hover-bg-color;
+		}
 	}
-  
+	
 	@include breakpoint($M) {
-		@include clearfix;
+		display: inline-block;
 	}
 }
 
-.nav-block {
+.nav-menu-list {
 	@include breakpoint(max-width $M) {
-		&.is-secondary-block {
-			display: none;
+		display: none;
+		margin-top: $nav-margin;
+		background-color: $nav-bg-color;
+
+		.nav-menu-wrapper:hover & {
+			display: block;
 		}
 	}
-  
+}
+
+.nav-menu-list li {
 	@include breakpoint($M) {
-		margin-left: $nav-margin;
-		@include float-left;
+		display: inline-block;
 	}
 }
 
@@ -131,153 +132,73 @@ nav {
 	display: block;
 	min-width: $nav-item-min-width;
 	padding: $nav-item-padding;
+	font-size: 1.0em;
 	white-space: nowrap;
 	color: $nav-item-color;
-	background-color: $nav-item-bg-color;
-	@include transition(color $nav-transition-time, background-color $nav-transition-time);
-  
-	&:hover, .nav-menu-wrapper:hover &.is-menu-item, .nav-menu-checkbox:checked ~ label &, .nav-block:hover &.is-list-toogle-item {
+
+	&:hover {
 		color: $nav-item-hover-color;
 		background-color: $nav-item-hover-bg-color;
 	}
-  
- 	&.is-logo-item {
+
+	@include breakpoint($M) {
 		text-align: center;
-    
-		&:hover {
-			background-color: $nav-item-bg-color;
-		}
-	}
-  
-	&.is-menu-item {
-		text-align: center;
-		min-width: $nav-menu-item-min-width;
-		@include border-radius($nav-border-radius);
-	}
-    
-	@include breakpoint(max-width $M) {
-		&.is-list-toogle-item {
-			display: none;
-		}
-	}
-  
-	@include breakpoint($M) {   
-		&.is-menu-item {
-			display: none;
-		}
-    
-		&.is-active-item {
-			background-color: $nav-active-item-bg-color;
-    
-			&:hover {
- 				background-color: $nav-active-item-hover-bg-color;
-			}
-		}
-    
-		&.is-reservation-item {
-			margin-left: 2em;
-			color: $nav-reservation-item-color;
-			background-color: $nav-reservation-item-bg-color;
-    
-			&:hover {
-				color: $nav-reservation-item-hover-color;
- 				background-color: $nav-reservation-item-hover-bg-color;
-			}
-		}
-    
-		&.is-list-toogle-item, .nav-list.is-main-list & {
-			text-align: center;
-			@include border-radius($nav-border-radius);
-		}
 	}
 }
 
-.nav-list {
-	padding: 0;
-	margin: 0;
-	border: 0;
-  
-	li {
-		overflow: hidden;
-		max-width: 0;
-		max-height: 0;
-		@include transition(max-width 0ms $nav-transition-time, max-height $nav-transition-time);
-		@include no-bullet;
+.is-header-item {
+	text-align: center;
+
+	&:hover {
+		background-color: $nav-item-bg-color;
 	}
-  
+}
+
+.is-menu-item {
+	text-align: center;
+
 	@include breakpoint(max-width $M) {
-		.nav-menu-checkbox:checked ~ .nav-blocks-wrapper & li, .nav-menu-wrapper:hover & li {
-			max-width: $nav-item-max-width;
-			max-height: $nav-item-max-height;
-			@include transition(max-width 0ms, max-height $nav-transition-time);
-		}
+		display: inline-block;
+		margin-left: $nav-margin;
 	}
-  
+
 	@include breakpoint($M) {
-		&.is-main-list {
-			@include clearfix;
-      
-			li {
-				max-width: $nav-item-max-width;
-				max-height: $nav-item-max-height;
-				@include transition(max-width 0ms, max-height 0ms);
- 				@include float-left;
-        
-				&:not(:first-of-type) {
-					margin-left: $nav-margin;
-				}
-			}
-		}
-    
-		&:not(.is-main-list){
-			position: absolute;
- 			top: auto;
-			left: auto;
-			padding-top: $nav-margin;
-      
-			li {
-				background-color: $nav-bg-color;
-        
-				&:last-of-type {
-					@include border-bottom-radius($nav-border-radius);
-				}
-        
-        		.nav-block:hover & {
-					max-width: $nav-item-max-width;
-					max-height: $nav-item-max-height;
-					@include transition(max-width 0ms, max-height $nav-transition-time);
-				}
-			}
-		}
+		display: none;
+	}
+}
+
+.is-active-item {
+	background-color: $nav-active-item-bg-color;
+
+	&:hover {
+		background-color: $nav-active-item-hover-bg-color;
+	}
+}
+
+.is-reservation-item {
+	&:hover {
+		color: $nav-reservation-item-hover-color;
+		background-color: $nav-reservation-item-hover-bg-color;
+	}
+}
+
+.nav-lang-wrapper {
+	position: absolute;
+	top: 0;
+	right: $nav-margin;
+	margin: $nav-margin 0;
+
+	li {
+		display: inline-block;
+	}
+
+	.nav-item {
+		min-width: 0em;
+		text-align: center;
 	}
 }
 
 .menu-icon:before {
 	font-family: "FontAwesome";
 	content: $fa-bars;
-}
-
-.twitter-icon:before {
-	@extend %inline-icon-props;
-	content: $fa-twitter;
-}
-
-.facebook-icon:before {
-	@extend %inline-icon-props;
-	content: $fa-facebook-official;
-}
-
-.vimeo-icon:before {
-	@extend %inline-icon-props;
-	content: $fa-vimeo-square;
-}
-
-.linkedin-icon:before {
-	@extend %inline-icon-props;
-	content: $fa-linkedin-square;
-}
-
-.github-icon:before {
-	@extend %inline-icon-props;
-	content: $fa-github;
 }

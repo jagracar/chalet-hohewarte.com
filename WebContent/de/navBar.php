@@ -1,26 +1,35 @@
 <?php $active = 'is-active-item';?>
 
 <nav>
-	<div class="nav-logo">
-		<a href="<?php echo $homeDir;?>/de" class="nav-item is-logo-item">Chalet Hohe Warte</a>
-	</div>
+	<h1 class="nav-header">
+		<a href="<?php echo $homeDir;?>/de" class="nav-item is-header-item">Chalet Hohe Warte</a>
+	</h1>
 
 	<div class="nav-menu-wrapper">
-		<span class="nav-item is-menu-item menu-icon"></span>
+		<span class="nav-item is-menu-item menu-icon" onclick="return false;"></span>
 
-		<div class="nav-blocks-wrapper">
-			<div class="nav-block">
-				<ul class="nav-list is-main-list">
-					<li><a href="<?php echo $homeDir;?>beschreibung.php"
-						class="nav-item <?php if($page == 'beschreibung') { echo $active; }?>">Beschreibung</a></li>
-					<li><a href="<?php echo $homeDir;?>bilder.php"
-						class="nav-item <?php if($page == 'bilder') { echo $active; }?>">Bilder</a></li>
-					<li><a href="<?php echo $homeDir;?>kontakt.php"
-						class="nav-item <?php if($page == 'kontakt') { echo $active; }?>">Kontakt</a></li>
-					<li><a href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/wildkogel-arena/zillertal-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-691.html"
-						class="nav-item is-reservation-item" target="_blank">Jetz buchen!</a></li>
-				</ul>
-			</div>
-		</div>
+		<ul class="nav-menu-list">
+			<li><a href="<?php echo $homeDir;?>index.php"
+				class="nav-item <?php if($page == 'home') { echo $active; }?>">Startseite</a></li>
+			<li><a href="<?php echo $homeDir;?>beschreibung.php"
+				class="nav-item <?php if($page == 'beschreibung') { echo $active; }?>">Beschreibung</a></li>
+			<li><a href="<?php echo $homeDir;?>bilder.php"
+				class="nav-item <?php if($page == 'bilder') { echo $active; }?>">Bilder</a></li>
+			<li><a href="<?php echo $homeDir;?>aktivitaeten.php"
+				class="nav-item <?php if($page == 'aktivitaeten') { echo $active; }?>">Aktivitäten</a></li>
+			<li><a href="<?php echo $homeDir;?>kontakt.php"
+				class="nav-item <?php if($page == 'kontakt') { echo $active; }?>">Kontakt</a></li>
+			<li><a href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/wildkogel-arena/zillertal-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-691.html"
+				class="nav-item is-reservation-item" target="_blank">Jetz buchen!</a></li>
+		</ul>
 	</div>
+	
+	<div class="nav-lang-wrapper">
+		<ul class="nav-lang-list">
+			<li><a href="/en/<?php echo $alternative;?>"
+				class="nav-item">EN</a></li>
+			<li><a href="<?php echo $homeDir;?>"
+				class="nav-item is-active-item">DE</a></li>
+		</ul>
+	</div>	
 </nav>

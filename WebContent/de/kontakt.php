@@ -2,6 +2,7 @@
 	// General php variables
 	$page = 'kontakt';
 	$homeDir = '';
+	$alternative = 'contact.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
 <meta name="description" content="Kontakt Chalet Hohe Warte">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/contact.php">
+<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative; ?>">
 
 <title>Kontakt - Chalet Hohe Warte</title>
 
@@ -31,7 +32,7 @@
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container">
+	<div class="main-container" onclick="return true">
 		
 		<header>
 			<h1>Chalet Hohe Warte</h1>
