@@ -1,11 +1,11 @@
 <?php $active = 'is-active-item';?>
 
-<nav>
+<header class="nav-container">
 	<h1 class="nav-header">
 		<a href="<?php echo $homeDir;?>/en" class="nav-item is-header-item">Chalet Hohe Warte</a>
 	</h1>
 
-	<div class="nav-menu-wrapper">
+	<nav class="nav-menu-wrapper">
 		<span class="nav-item is-menu-item menu-icon" onclick="return false;"></span>
 
 		<ul class="nav-menu-list">
@@ -22,14 +22,14 @@
 			<li><a href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/wildkogel-arena/zillertal-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-691.html"
 				class="nav-item is-reservation-item" target="_blank">Reservations</a></li>
 		</ul>
-	</div>
+	</nav>
 
-	<div class="nav-lang-wrapper">
-		<ul class="nav-lang-list">
+	<nav class="nav-lang-wrapper">
+ 		<ul class="nav-lang-list">
 			<li><a href="<?php echo $homeDir;?>"
 				class="nav-item is-active-item">EN</a></li>
 			<li><a href="/de/<?php echo $alternative;?>"
 				class="nav-item">DE</a></li>
 		</ul>
-	</div>	
-</nav>
+	</nav>
+</header>

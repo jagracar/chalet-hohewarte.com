@@ -14,41 +14,37 @@
 <meta name="description" content="Aktivitäten Chalet Hohe Warte">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative; ?>">
+<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
 
 <title>Aktivitäten - Chalet Hohe Warte</title>
 
-<!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir; ?>../css/styles.css" />
-
-<!-- Useful JavaScript files -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body>
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container">
-
-	<div class="content">
+	<main class="main-container">
+	<article class="content">
 		<header>
-			<h1>Aktivitäten</h1>
+			<h2>Aktivitäten</h2>
 		</header>
 
-    	<h2>Winter</h2>
+		<section>
+    		<h3>Winter</h3>
+		</section>
 
-    	<h2>Sommer</h2>
-
-	</div>
+    	<section>
+    		<h3>Sommer</h3>
+		</section>
+	</article>
+	</main>
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
-
-	</div>
 
 </body>
 </html>

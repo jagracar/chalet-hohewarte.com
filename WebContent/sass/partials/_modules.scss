@@ -2,7 +2,8 @@
  * Navigation bar components
  */
 
-nav {
+.nav-container {
+	width: 100%;
 	padding: $nav-margin 0;
 	background-color: $nav-bg-color;
 	@include box-shadow(0px 3px 3px $nav-shadow-color);
@@ -112,6 +113,7 @@ nav {
  */
 
 .main-container {
+	width: 100%;
 	padding-left: 10%;
 	padding-right: 20%;
 
@@ -121,23 +123,23 @@ nav {
 	}
 }
 
-.content {
-	width: 100%;
-}
-
 
 /*
  * Footer components
  */
 
-footer {
+.footer-container {
 	width: 100%;
-	padding: 0.5em 0;
+	padding: 0.5em 20% 0.5em 10%;
 	border-top: 1px dotted $footer-border-color;
 	color: $footer-color;
  
 	.separator {
 		padding: 0 0.5em;
+	}
+
+	@include breakpoint(max-width $XL) {
+		padding: 0.5em 5% 0.5em 5%;
 	}
 }
 

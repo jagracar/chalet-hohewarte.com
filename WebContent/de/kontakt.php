@@ -14,29 +14,23 @@
 <meta name="description" content="Kontakt Chalet Hohe Warte">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative; ?>">
+<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
 
 <title>Kontakt - Chalet Hohe Warte</title>
 
-<!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir; ?>../css/styles.css" />
-
-<!-- Useful JavaScript files -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body>
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container">
-		
-	<div class="content">
+	<main class="main-container">
+	<article class="content">
 		<header>
-			<h1>Chalet Hohe Warte</h1>
+			<h2>Chalet Hohe Warte</h2>
 		</header>
 
 		<p>Das Chalet befindet sich in einer idyllischen Umgebung mit freiem Blick auf die
@@ -45,39 +39,42 @@
 		verfügt auf 170 qm über 5 Schlafzimmer, 4 Bäder, 2 Küchen, Sauna, Skistall und beheizter
 		Freisitz für bis zu 12 Personen. Mit Parkmöglichkeit für 3 PKW.</p>
 
-		<h1>Entfernung Städte und Dörfer ab Neukirchen</h1>
+		<section>
+    		<h3>Entfernung Städte und Dörfer ab Neukirchen</h3>
+    		
+        	<ul>
+        		<li>Bramberg etwa 5 km.</li>
+        		<li>Wald im Pinzgau etwa 10 km.</li>
+        		<li>Hochkrimml etwa 20 km.</li>
+        		<li>Zell am See etwa 45 km.</li>
+        		<li>Innsbruck etwa 100 km.</li>
+        		<li>Salzburg etwa 120 km.</li>
+        		<li>Die Entfernung von München nach Neukirchen ist etwa 190 km.</li>
+        	</ul>
+		</section>
 		
-    	<ul>
-    		<li>Bramberg etwa 5 km.</li>
-    		<li>Wald im Pinzgau etwa 10 km.</li>
-    		<li>Hochkrimml etwa 20 km.</li>
-    		<li>Zell am See etwa 45 km.</li>
-    		<li>Innsbruck etwa 100 km.</li>
-    		<li>Salzburg etwa 120 km.</li>
-    		<li>Die Entfernung von München nach Neukirchen ist etwa 190 km.</li>
-    	</ul>
-		
-		<h1>Verkehr ab Neukirchen</h1>
-		
-		<p>Flughafen:</p>
-    	<ul>
-    		<li>Innsbruck (ca. 107 km)</li>
-    		<li>Salzburg (ca. 138 km)</li>
-    		<li>München (ca. 229 km)</li>
-    	</ul>
-		
-		<p>Bahnhof:</p>
-    	<ul>
-    		<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums)</li>
-    		<li>Wald im Pinzgau (etwa 5 km)</li>
-    		<li>Mittersill (etwa 18 km)</li>
-    	</ul>
-	</div>
+		<section>
+    		<h3>Verkehr ab Neukirchen</h3>
+    		
+    		<p>Flughafen:</p>
+        	<ul>
+        		<li>Innsbruck (ca. 107 km)</li>
+        		<li>Salzburg (ca. 138 km)</li>
+        		<li>München (ca. 229 km)</li>
+        	</ul>
+    		
+    		<p>Bahnhof:</p>
+        	<ul>
+        		<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums)</li>
+        		<li>Wald im Pinzgau (etwa 5 km)</li>
+        		<li>Mittersill (etwa 18 km)</li>
+        	</ul>
+    	</section>
+	</article>
+	</main>
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
-
-	</div>
 
 </body>
 </html>

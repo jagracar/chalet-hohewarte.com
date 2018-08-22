@@ -14,39 +14,31 @@
 <meta name="description" content="Bilder Chalet Hohe Warte">
 <meta name="author" content="Javier Gracia Carpio">
 
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative; ?>">
+<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
 
 <title>Bilder - Chalet Hohe Warte</title>
 
-<!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir; ?>../css/styles.css" />
-
-<!-- Useful JavaScript files -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body>
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container">
-
-	<div class="content">
+	<main class="main-container">
+	<article class="content">
 		<header>
-			<h1>Bilder</h1>
+			<h2>Bilder</h2>
 		</header>
 		
 		<img src="../pictures/fig1.jpg"/>
-
-	</div>
+	</article>
+	</main>
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
-
-	</div>
 
 </body>
 </html>
