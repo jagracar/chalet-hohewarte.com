@@ -34,6 +34,8 @@
 
 	<div class="main-container">
 
+	<div class="content">
+
     	<h1>Skiraum im Chalet</h1>
     
     	<p>Ein beheizter Skiraum mit Schuhtrockner ermöglicht bequemes Anziehen und Trocknen der
@@ -65,5 +67,8 @@
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
+
+	</div>
+
 </body>
 </html>

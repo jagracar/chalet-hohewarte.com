@@ -32,7 +32,9 @@
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container" onclick="return true">
+	<div class="main-container">
+
+	<div class="content">
 
     	<h1>Skiraum im Chalet</h1>
     
@@ -65,5 +67,8 @@
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
+
+	</div>
+
 </body>
 </html>

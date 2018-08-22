@@ -32,7 +32,9 @@
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container" onclick="return true">
+	<div class="main-container">
+
+	<div class="content">
 		<header>
 			<h1>NATIONALPARK CHALETS</h1>
 			<h1>Chalet Hohe Warte</h1>
@@ -60,5 +62,8 @@
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
+
+	</div>
+
 </body>
 </html>

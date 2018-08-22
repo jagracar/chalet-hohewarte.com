@@ -33,6 +33,8 @@
 	<?php include_once $homeDir . 'navBar.php';?>
 
 	<div class="main-container">
+
+	<div class="content">
 		<header>
 			<h1>Bilder</h1>
 		</header>
@@ -43,5 +45,8 @@
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
+
+	</div>
+
 </body>
 </html>

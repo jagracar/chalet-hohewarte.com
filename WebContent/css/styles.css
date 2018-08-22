@@ -258,7 +258,7 @@ header h1 {
   font-size: 2.2em;
   line-height: 1;
 }
-@media (min-width: 43em) {
+@media (min-width: 50em) {
   header h1 {
     font-size: 2.6em;
   }
@@ -289,47 +289,203 @@ img {
   box-sizing: border-box;
 }
 
-.main-container, footer {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.main-container:after, footer:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/*
- * General web look
- */
 html, body {
   height: 100%;
 }
 
-.main-container {
-  min-height: 100%;
-  padding: 3.5em 0 6.5em 0;
-  margin-bottom: -4em;
+/*
+ * First flexbox group
+ */
+body {
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 43em) {
-  .main-container {
-    padding-bottom: 8.5em;
-    margin-bottom: -6em;
-  }
+
+nav {
+  flex: 0 0 auto;
+}
+
+.main-container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+/*
+ * Second flexbox group
+ */
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-header {
+  flex: 0 0 auto;
+}
+
+.nav-menu-wrapper {
+  flex: 1 1 auto;
+}
+
+.nav-lang-wrapper {
+  flex: 0 0 auto;
+}
+
+/*
+ * Third flexbox group
+ */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  flex: 1 1 auto;
 }
 
 footer {
-  max-height: 4em;
+  flex: 0 0 auto;
+}
+
+/*
+ * Layout for small devices
+ */
+@media (max-width: 50em) {
+  .nav-header {
+    flex: 1 1 auto;
+  }
+
+  .nav-menu-wrapper {
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+  }
+
+  .nav-lang-wrapper {
+    position: absolute;
+    top: 0.3em;
+    right: 0;
+  }
+}
+/*
+ * Navigation bar components
+ */
+nav {
+  padding: 0.3em 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
+  -webkit-box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
+  box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav-header {
+  width: 12em;
+  margin: 0;
+  font-size: 1.0em;
+}
+
+.nav-lang-wrapper {
+  margin-right: 0.3em;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.4em 0.7em;
+  font-size: 1.0em;
+  text-align: center;
+  white-space: nowrap;
+  color: #e6e6e6;
+}
+.nav-item:hover {
+  color: white;
+  background-color: rgba(77, 77, 77, 0.72);
+}
+
+.is-header-item:hover {
+  background-color: transparent;
+}
+
+.is-menu-item {
+  display: none;
+}
+
+.is-active-item {
+  background-color: rgba(0, 128, 0, 0.72);
+}
+.is-active-item:hover {
+  background-color: rgba(26, 255, 26, 0.72);
+}
+
+.is-reservation-item:hover {
+  color: white;
+  background-color: #ff3333;
+}
+
+@media (max-width: 50em) {
+  .nav-menu-wrapper:hover {
+    width: 100%;
+  }
+  .nav-menu-wrapper:hover .is-menu-item {
+    background-color: rgba(77, 77, 77, 0.72);
+  }
+
+  .is-menu-item {
+    display: inline-block;
+    margin-left: 0.3em;
+  }
+
+  .nav-menu-list {
+    display: none;
+  }
+  .nav-menu-wrapper:hover .nav-menu-list {
+    display: block;
+    margin-top: 0.3em;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav-menu-list li {
+    display: list-item;
+  }
+  .nav-menu-list .nav-item {
+    text-align: left;
+  }
+}
+/*
+ * Content components
+ */
+.main-container {
+  padding-left: 10%;
+  padding-right: 20%;
+}
+@media (max-width: 75em) {
+  .main-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+/*
+ * Footer components
+ */
+footer {
+  width: 100%;
   padding: 0.5em 0;
   border-top: 1px dotted #cccccc;
   color: #666666;
-  overflow: hidden;
-}
-@media (max-width: 43em) {
-  footer {
-    max-height: 6em;
-  }
 }
 footer .separator {
   padding: 0 0.5em;
@@ -338,6 +494,11 @@ footer .separator {
 /*
  * Icons
  */
+.menu-icon:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+
 .envelope-icon:before {
   font-family: "FontAwesome";
   content: "";
@@ -356,147 +517,4 @@ footer .separator {
 .handMade-icon:before {
   font-family: "FontAwesome";
   content: "";
-}
-
-/*
- * Navigation bar components
- */
-nav {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
-  -webkit-box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
-  box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
-}
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  list-style-type: none;
-}
-
-.nav-header {
-  margin: 0.3em 0;
-  font-size: 1.0em;
-}
-@media (min-width: 43em) {
-  .nav-header {
-    display: inline-block;
-    width: 12em;
-  }
-}
-
-.nav-menu-wrapper {
-  margin: 0.3em 0;
-}
-@media (max-width: 43em) {
-  .nav-menu-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .nav-menu-wrapper:hover {
-    width: 100%;
-  }
-  .nav-menu-wrapper:hover .is-menu-item {
-    background-color: rgba(77, 77, 77, 0.72);
-  }
-}
-@media (min-width: 43em) {
-  .nav-menu-wrapper {
-    display: inline-block;
-  }
-}
-
-@media (max-width: 43em) {
-  .nav-menu-list {
-    display: none;
-    margin-top: 0.3em;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  .nav-menu-wrapper:hover .nav-menu-list {
-    display: block;
-  }
-}
-
-@media (min-width: 43em) {
-  .nav-menu-list li {
-    display: inline-block;
-  }
-}
-
-.nav-item {
-  display: block;
-  min-width: 2.5em;
-  padding: 0.4em 0.7em;
-  font-size: 1.0em;
-  white-space: nowrap;
-  color: #e6e6e6;
-}
-.nav-item:hover {
-  color: white;
-  background-color: rgba(77, 77, 77, 0.72);
-}
-@media (min-width: 43em) {
-  .nav-item {
-    text-align: center;
-  }
-}
-
-.is-header-item {
-  text-align: center;
-}
-.is-header-item:hover {
-  background-color: transparent;
-}
-
-.is-menu-item {
-  text-align: center;
-}
-@media (max-width: 43em) {
-  .is-menu-item {
-    display: inline-block;
-    margin-left: 0.3em;
-  }
-}
-@media (min-width: 43em) {
-  .is-menu-item {
-    display: none;
-  }
-}
-
-.is-active-item {
-  background-color: rgba(0, 128, 0, 0.72);
-}
-.is-active-item:hover {
-  background-color: rgba(26, 255, 26, 0.72);
-}
-
-.is-reservation-item:hover {
-  color: white;
-  background-color: #ff3333;
-}
-
-.nav-lang-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0.3em;
-  margin: 0.3em 0;
-}
-.nav-lang-wrapper li {
-  display: inline-block;
-}
-.nav-lang-wrapper .nav-item {
-  min-width: 0em;
-  text-align: center;
-}
-
-.menu-icon:before {
-  font-family: "FontAwesome";
-  content: "";
 }

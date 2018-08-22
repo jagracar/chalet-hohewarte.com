@@ -32,8 +32,9 @@
 	<!-- Navigation bar -->
 	<?php include_once $homeDir . 'navBar.php';?>
 
-	<div class="main-container" onclick="return true">
+	<div class="main-container">
 		
+	<div class="content">
 		<header>
 			<h1>Chalet Hohe Warte</h1>
 		</header>
@@ -71,10 +72,12 @@
     		<li>Wald im Pinzgau (etwa 5 km)</li>
     		<li>Mittersill (etwa 18 km)</li>
     	</ul>
-
 	</div>
 
 	<!-- Footer -->
 	<?php include_once $homeDir . 'footer.php';?>
+
+	</div>
+
 </body>
 </html>

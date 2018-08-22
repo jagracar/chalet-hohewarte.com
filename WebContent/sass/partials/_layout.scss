@@ -1,22 +1,92 @@
 /*
  * General layout
  */
-// Susy map
-$susy: (
-	columns: 12,
-	container: 90%,
-	global-box-sizing: "border-box",
-	/*
-	debug: (
-		image: show,
-		output: overlay
-	)
-	*/
-);
 
-// Box sizing model 
 @include border-box-sizing;
 
-.main-container, footer {
-	@include container;
+html, body {
+	height: 100%;
+}
+
+
+/*
+ * First flexbox group
+ */
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	flex: 0 0 auto;
+}
+
+.main-container {
+	flex: 1 1 auto;
+	overflow-y: auto;
+}
+
+
+/*
+ * Second flexbox group
+ */
+
+nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-header {
+	flex: 0 0 auto;
+}
+
+.nav-menu-wrapper {
+	flex: 1 1 auto;
+}
+
+.nav-lang-wrapper {
+	flex: 0 0 auto;
+}
+
+
+/*
+ * Third flexbox group
+ */
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+footer {
+	flex: 0 0 auto;
+}
+
+
+/*
+ * Layout for small devices
+ */
+
+@include breakpoint(max-width $M) {
+	.nav-header {
+		flex: 1 1 auto;
+	}
+
+	.nav-menu-wrapper {
+		position: absolute;
+		top: $nav-margin;
+		left: 0;
+	}
+
+	.nav-lang-wrapper {
+		position: absolute;
+		top: $nav-margin;
+		right: 0;
+	}
 }
