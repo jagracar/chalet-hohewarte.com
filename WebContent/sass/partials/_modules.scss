@@ -117,6 +117,19 @@
 	}
 }
 
+.pictures-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 0;
+
+	figure {
+		margin: 0.3em;
+	}
+
+	@include breakpoint(max-width $M) {
+		grid-template-columns: 100%;
+	}
+}
 
 /*
  * Footer components

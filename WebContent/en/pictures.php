@@ -32,8 +32,26 @@
 		<header>
 			<h2>Pictures</h2>
 		</header>
-		
-		<img src="../pictures/fig1.jpg"/>
+
+		<figure>
+			<figcaption>View from the terrace.</figcaption>
+
+			<div  class="pictures-container">
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Mountain view 1"/>
+    				<figcaption>Mountain view 1.</figcaption>
+    			</figure>
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Mountain view 2"/>
+    				<figcaption>Mountain view 2.</figcaption>
+    			</figure>
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Mountain view 3"/>
+    				<figcaption>Mountain view 3.</figcaption>
+    			</figure>
+			</div>
+		</figure>
+	
 	</article>
 	</main>
 

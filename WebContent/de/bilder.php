@@ -32,8 +32,26 @@
 		<header>
 			<h2>Bilder</h2>
 		</header>
-		
-		<img src="../pictures/fig1.jpg"/>
+	
+		<figure>
+			<figcaption>Aussicht von der Terrasse.</figcaption>
+			
+			<div  class="pictures-container">
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Berg blick 1"/>
+    				<figcaption>Berg Blick 1.</figcaption>
+    			</figure>
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Berg blick 2"/>
+    				<figcaption>Berg Blick 2.</figcaption>
+    			</figure>
+    			<figure>
+    				<img src="../pictures/fig1.jpg" alt="Berg blick 3"/>
+    				<figcaption>Berg Blick 3.</figcaption>
+    			</figure>
+			</div>
+		</figure>
+	
 	</article>
 	</main>
 
