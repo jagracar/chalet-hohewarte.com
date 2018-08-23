@@ -3,8 +3,7 @@
  */
 
 .nav-container {
-	width: 100%;
-	padding: $nav-margin 0;
+	padding: $nav-margin;
 	background-color: $nav-bg-color;
 	@include box-shadow(0px 3px 3px $nav-shadow-color);
 
@@ -27,10 +26,6 @@
 	width: $nav-header-width;
 	margin: 0;
 	font-size: 1.0em;
-}
-
-.nav-lang-wrapper {
-	margin-right: $nav-margin;
 }
 
 .nav-item {
@@ -113,7 +108,6 @@
  */
 
 .main-container {
-	width: 100%;
 	padding-left: 10%;
 	padding-right: 20%;
 
@@ -129,18 +123,23 @@
  */
 
 .footer-container {
-	width: 100%;
-	padding: 0.5em 20% 0.5em 10%;
-	border-top: 1px dotted $footer-border-color;
-	color: $footer-color;
- 
-	.separator {
-		padding: 0 0.5em;
-	}
+	padding-left: 10%;
+	padding-right: 20%;
 
 	@include breakpoint(max-width $XL) {
-		padding: 0.5em 5% 0.5em 5%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
+}
+
+.footer-container > div {	
+	border-top: 1px dotted $footer-border-color;
+	padding: 0.5em 0;
+	color: $footer-color;
+}
+
+.separator {
+	padding: 0 0.5em;
 }
 
 
