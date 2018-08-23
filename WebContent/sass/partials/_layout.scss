@@ -2,18 +2,12 @@
  * General layout
  */
 
-*, *:before, *:after {
-	@include box-sizing(border-box);
-}
-
 html, body {
 	height: 100%;
 }
 
 
-/*
- * First flexbox group
- */
+// First flexbox group
 
 body {
 	@include display-flex;
@@ -33,9 +27,7 @@ body {
 }
 
 
-/*
- * Second flexbox group
- */
+// Second flexbox group
 
 .nav-container {
 	@include display-flex;
@@ -55,9 +47,7 @@ body {
 }
 
 
-/*
- * Layout for small devices
- */
+// Layout for small devices
 
 @include breakpoint(max-width $M) {
 	.nav-header {

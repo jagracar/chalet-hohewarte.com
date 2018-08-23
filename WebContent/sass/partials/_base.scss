@@ -1,6 +1,11 @@
 /*
  * General styling
  */
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 0.9em;
@@ -13,22 +18,22 @@ a {
 	@include hover-link;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color: $header-color;
 }
 
 header {
 	h2 {
-		font-size: 2.2em;
+		font-size: 2.6em;
 		line-height: 1;
-		
-		@include breakpoint($M){
-			font-size: 2.6em;
+
+		@include breakpoint(max-width $M) {
+			font-size: 2.2em;
 		}
 
- 		a {
- 			color: inherit;
+		a {
+			color: inherit;
 
 			&:hover, &:focus {
 				text-decoration: none;
@@ -37,7 +42,7 @@ header {
 	}
 
 	small {
-		font-size: 60%;  
+		font-size: 60%;
 	}
 }
 
