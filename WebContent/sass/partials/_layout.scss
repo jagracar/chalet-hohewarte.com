@@ -15,11 +15,14 @@ body {
 }
 
 .nav-container {
-	@include flex(0 0 auto);
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .main-container {
 	@include flex(1 1 auto);
+	margin-top: 3em;
 }
 
 .footer-container {

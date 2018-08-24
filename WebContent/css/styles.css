@@ -166,8 +166,8 @@ template {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontAwesome/fontawesome-webfont.eot?v=4.3.0&1534939455');
-  src: url('../fonts/fontAwesome/fontawesome-webfont.eot?&1534939455#iefix&v=4.3.0') format("embedded-opentype"), url('../fonts/fontAwesome/fontawesome-webfont.woff2?v=4.3.0&1534939455') format("woff2"), url('../fonts/fontAwesome/fontawesome-webfont.woff?v=4.3.0&1534939455') format("woff"), url('../fonts/fontAwesome/fontawesome-webfont.ttf?v=4.3.0&1534939455') format("truetype"), url('../fonts/fontAwesome/fontawesome-webfont.svg?v=4.3.0&1534939455#fontawesomeregular') format("svg");
+  src: url('../fonts/fontAwesome/fontawesome-webfont.eot?v=4.3.0&1534962582');
+  src: url('../fonts/fontAwesome/fontawesome-webfont.eot?&1534962582#iefix&v=4.3.0') format("embedded-opentype"), url('../fonts/fontAwesome/fontawesome-webfont.woff2?v=4.3.0&1534962582') format("woff2"), url('../fonts/fontAwesome/fontawesome-webfont.woff?v=4.3.0&1534962582') format("woff"), url('../fonts/fontAwesome/fontawesome-webfont.ttf?v=4.3.0&1534962582') format("truetype"), url('../fonts/fontAwesome/fontawesome-webfont.svg?v=4.3.0&1534962582#fontawesomeregular') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -215,9 +215,6 @@ header h2 a {
 header h2 a:hover, header h2 a:focus {
   text-decoration: none;
 }
-header small {
-  font-size: 60%;
-}
 
 h3 {
   font-size: 1.5em;
@@ -229,6 +226,10 @@ iframe {
 
 img {
   width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 /*
@@ -246,13 +247,15 @@ body {
 }
 
 .nav-container {
-  -webkit-flex: 0 0 auto;
-  flex: 0 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .main-container {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
+  margin-top: 3em;
 }
 
 .footer-container {
@@ -304,6 +307,7 @@ body {
  * Navigation bar components
  */
 .nav-container {
+  width: 100%;
   padding: 0.3em;
   background-color: rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
@@ -405,16 +409,20 @@ body {
 
 .pictures-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  gap: 1em;
   margin: 0;
-}
-.pictures-container figure {
-  margin: 0.3em;
 }
 @media (max-width: 50em) {
   .pictures-container {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
+}
+
+#map-container {
+  width: 100%;
+  height: 400px;
 }
 
 /*

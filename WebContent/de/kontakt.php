@@ -18,6 +18,7 @@
 
 <!-- CSS files -->
 <link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>../css/leaflet/leaflet.css">
 
 <title>Kontakt - Chalet Hohe Warte</title>
 
@@ -38,6 +39,12 @@
 		(Oberpinzgau, Salzburger Land). Es ist gemütlich im Stil Alpin modern eingerichtet und
 		verfügt auf 170 qm über 5 Schlafzimmer, 4 Bäder, 2 Küchen, Sauna, Skistall und beheizter
 		Freisitz für bis zu 12 Personen. Mit Parkmöglichkeit für 3 PKW.</p>
+
+		<figure>
+			<div id="map-container"></div>
+			<script src="<?php echo $homeDir;?>../js/leaflet.js"></script>
+			<script src="<?php echo $homeDir;?>../js/location-map.js"></script>
+		</figure>
 
 		<section>
     		<h3>Entfernung Städte und Dörfer ab Neukirchen</h3>
