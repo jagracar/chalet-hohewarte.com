@@ -69,7 +69,7 @@
         		<li>Salzburg (ca. 138 km)</li>
         		<li>München (ca. 229 km)</li>
         	</ul>
-    		
+
     		<p>Bahnhof:</p>
         	<ul>
         		<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums)</li>
