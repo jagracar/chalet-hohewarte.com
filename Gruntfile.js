@@ -5,27 +5,35 @@ module.exports = function(grunt) {
 
 		// grunt-contrib-sass
 		sass : {
-			files : {
-				"WebContent/css/test.css" : "WebContent/sass/styles.scss"
+			options : {
+				sourcemap : 'none',
+				style : 'expanded'
+			},
+			build : {
+				src : 'sass/styles.scss',
+				dest : 'WebContent/css/styles.css'
 			}
 		},
 
 		// grunt-autoprefixer
 		autoprefixer : {
-			files : {
-				"WebContent/css/test-pref.css" : "WebContent/css/test.css"
+			build : {
+				src : 'WebContent/css/styles.css',
+				dest : 'WebContent/css/styles.css'
 			}
 		},
 
 		// grunt-jshint
 		jshint : {
-			files : [ 'Gruntfile.js', 'package.json', 'WebContent/js/location-map.js' ]
+			build : [ 'Gruntfile.js', 'package.json', 'WebContent/js/location-map.js' ]
 		},
 
 		// grunt-contrib-watch
 		watch : {
-			files : [ 'WebContent/sass/partials/*.scss', 'WebContent/js/*.js' ],
-			tasks : [ 'default' ]
+			build : {
+				files : [ 'sass/partials/*.scss', 'WebContent/js/*.js' ],
+				tasks : [ 'default' ]
+			}
 		}
 	});
 

@@ -38,20 +38,20 @@ var addMapToDiv = function(id, season) {
     var baseMaps = {
         "Streets" : OpenStreetMap_Mapnik,
         "Satellite": Esri_WorldImagery
-    }
+    };
+    
+    var overlays = {};
     
     if (season == "summer") {
-        var overlays = {
+        overlays = {
             "Hiking routes" : Waymarkedtrails_hiking,
             "Cycling routes" : Waymarkedtrails_cycling,
             "Mountain bike routes" : Waymarkedtrails_mtb
 	    };
     } else if (season == "winter") {
-        var overlays = {
+        overlays = {
             "Slopes" : OpenSnow
         };
-    } else {
-        var overlays = {};
     }
     
     // Initialize the map
@@ -63,7 +63,7 @@ var addMapToDiv = function(id, season) {
     });
     
     // Add the first layer to the map
-    map.addLayer(baseMaps["Streets"]);
+    map.addLayer(baseMaps.Streets);
     
     // Add a marker indicating the chalet position
     var marker = L.marker([ 47.252809, 12.260797 ]);
