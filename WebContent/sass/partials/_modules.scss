@@ -36,7 +36,8 @@
 	text-align: center;
 	white-space: nowrap;
 	color: $nav-item-color;
-
+	background-color: $nav-item-bg-color;
+	
 	&:hover {
 		color: $nav-item-hover-color;
 		background-color: $nav-item-hover-bg-color;
@@ -111,6 +112,7 @@
 .main-container {
 	padding-left: 10%;
 	padding-right: 20%;
+	margin-top: 3em;
 
 	@include breakpoint(max-width $XL) {
 		padding-left: 5%;
@@ -131,7 +133,7 @@
 	}
 }
 
-#map-container {
+.map-container {
 	width: 100%;
 	height: 400px;
 }

@@ -1,7 +1,7 @@
 <?php
 	// General php variables
 	$page = 'bilder';
-	$homeDir = '';
+	$homeDir = '../';
 	$alternative = 'pictures.php';
 ?>
 
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
 
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
 
 <title>Bilder - Chalet Hohe Warte</title>
 
@@ -25,7 +25,7 @@
 
 <body>
 	<!-- Navigation bar -->
-	<?php include_once $homeDir . 'navBar.php';?>
+	<?php include_once 'navBar.php';?>
 
 	<main class="main-container">
 	<article class="content">
@@ -38,15 +38,15 @@
 			
 			<div  class="pictures-container">
     			<figure>
-    				<img src="../pictures/fig1.jpg" alt="Berg blick 1"/>
+    				<img src="<?php echo $homeDir;?>pictures/fig1.jpg" alt="Berg blick 1"/>
     				<figcaption>Berg Blick 1.</figcaption>
     			</figure>
     			<figure>
-    				<img src="../pictures/fig1.jpg" alt="Berg blick 2"/>
+    				<img src="<?php echo $homeDir;?>pictures/fig1.jpg" alt="Berg blick 2"/>
     				<figcaption>Berg Blick 2.</figcaption>
     			</figure>
     			<figure>
-    				<img src="../pictures/fig1.jpg" alt="Berg blick 3"/>
+    				<img src="<?php echo $homeDir;?>pictures/fig1.jpg" alt="Berg blick 3"/>
     				<figcaption>Berg Blick 3.</figcaption>
     			</figure>
 			</div>
@@ -56,7 +56,7 @@
 	</main>
 
 	<!-- Footer -->
-	<?php include_once $homeDir . 'footer.php';?>
+	<?php include_once 'footer.php';?>
 
 </body>
 </html>

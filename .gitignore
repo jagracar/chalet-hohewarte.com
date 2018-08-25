@@ -1,2 +1,5 @@
 .sass-cache
 .directory
+node_modules
+package-lock.json
+

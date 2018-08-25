@@ -1,7 +1,7 @@
 <?php
 	// General php variables
 	$page = 'aktivitaeten';
-	$homeDir = '';
+	$homeDir = '../';
 	$alternative = 'activities.php';
 ?>
 
@@ -17,7 +17,8 @@
 <link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
 
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/leaflet/leaflet.css">
 
 <title>Aktivitäten - Chalet Hohe Warte</title>
 
@@ -25,7 +26,7 @@
 
 <body>
 	<!-- Navigation bar -->
-	<?php include_once $homeDir . 'navBar.php';?>
+	<?php include_once 'navBar.php';?>
 
 	<main class="main-container">
 	<article class="content">
@@ -35,16 +36,30 @@
 
 		<section>
     		<h3>Winter</h3>
+
+    		<figure>
+    			<div id="winter-map-container" class="map-container"></div>
+    			<script src="<?php echo $homeDir;?>js/leaflet.js"></script>
+    			<script src="<?php echo $homeDir;?>js/location-map.js"></script>
+    			<script>addMapToDiv("winter-map-container", "winter");</script>
+    		</figure>
 		</section>
 
     	<section>
     		<h3>Sommer</h3>
+
+    		<figure>
+    			<div id="summer-map-container" class="map-container"></div>
+    			<script src="<?php echo $homeDir;?>js/leaflet.js"></script>
+    			<script src="<?php echo $homeDir;?>js/location-map.js"></script>
+    			<script>addMapToDiv("summer-map-container", "summer");</script>
+    		</figure>
 		</section>
 	</article>
 	</main>
 
 	<!-- Footer -->
-	<?php include_once $homeDir . 'footer.php';?>
+	<?php include_once 'footer.php';?>
 
 </body>
 </html>

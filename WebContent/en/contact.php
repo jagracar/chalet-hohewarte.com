@@ -1,7 +1,7 @@
 <?php
 	// General php variables
 	$page = 'contact';
-	$homeDir = '';
+	$homeDir = '../';
 	$alternative = 'kontakt.php';
 ?>
 
@@ -17,8 +17,8 @@
 <link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative;?>">
 
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
-<link rel="stylesheet" href="<?php echo $homeDir;?>../css/leaflet/leaflet.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/leaflet/leaflet.css">
 
 <title>Contact - Chalet Hohe Warte</title>
 
@@ -26,12 +26,12 @@
 
 <body>
 	<!-- Navigation bar -->
-	<?php include_once $homeDir . 'navBar.php';?>
+	<?php include_once 'navBar.php';?>
 
 	<main class="main-container">
 	<article class="content">		
 		<header>
-			<h2>Chalet Hohe Warte</h2>
+			<h2>Contact</h2>
 		</header>
 
 		<p>Das Chalet befindet sich in einer idyllischen Umgebung mit freiem Blick auf die
@@ -41,9 +41,10 @@
 		Freisitz für bis zu 12 Personen. Mit Parkmöglichkeit für 3 PKW.</p>
 
 		<figure>
-			<div id="map-container"></div>
-			<script src="<?php echo $homeDir;?>../js/leaflet.js"></script>
-			<script src="<?php echo $homeDir;?>../js/location-map.js"></script>
+			<div id="contact-map-container" class="map-container"></div>
+			<script src="<?php echo $homeDir;?>js/leaflet.js"></script>
+			<script src="<?php echo $homeDir;?>js/location-map.js"></script>
+			<script>addMapToDiv("contact-map-container", "");</script>
 		</figure>
 
 		<section>
@@ -81,7 +82,7 @@
 	</main>
 
 	<!-- Footer -->
-	<?php include_once $homeDir . 'footer.php';?>
+	<?php include_once 'footer.php';?>
 
 </body>
 </html>

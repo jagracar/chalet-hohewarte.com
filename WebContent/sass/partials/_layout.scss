@@ -23,7 +23,6 @@ body {
 
 .main-container {
 	@include flex(1 1 auto);
-	margin-top: 3em;
 }
 
 .footer-container {

@@ -1,7 +1,7 @@
 <?php
 	// General php variables
 	$page = 'description';
-	$homeDir = '';
+	$homeDir = '../';
 	$alternative = 'beschreibung.php';
 ?>
 
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative;?>">
 
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>../css/styles.css">
+<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
 
 <title>Description - Chalet Hohe Warte</title>
 
@@ -25,7 +25,7 @@
 
 <body>
 	<!-- Navigation bar -->
-	<?php include_once $homeDir . 'navBar.php';?>
+	<?php include_once 'navBar.php';?>
 
 	<main class="main-container">
 	<article class="content">
@@ -73,7 +73,7 @@
 	</main>
 
 	<!-- Footer -->
-	<?php include_once $homeDir . 'footer.php';?>
+	<?php include_once 'footer.php';?>
 
 </body>
 </html>
