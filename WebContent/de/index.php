@@ -10,7 +10,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Hohe Warte, Ferienwohnung, Index, Startseite">
+<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Neukirchen am Großvenediger, Ferienwohnung, Index, Startseite">
 <meta name="description" content="Startseite Chalet Hohe Warte">
 <meta name="author" content="Javier Gracia Carpio">
 
@@ -19,7 +19,7 @@
 <!-- CSS files -->
 <link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
 
-<title>Chalet Hohe Warte</title>
+<title>Chalet Hohe Warte in Neukirchen am Großvenediger</title>
 
 </head>
 

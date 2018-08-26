@@ -4,7 +4,8 @@
 
 .nav-container {
 	width: 100%;
-	padding: $nav-margin;
+	padding: $nav-padding;
+	margin: $nav-margin;
 	background-color: $nav-bg-color;
 	box-shadow: 0px 3px 3px $nav-shadow-color;
 
@@ -32,12 +33,14 @@
 .nav-item {
 	display: block;
 	padding: $nav-item-padding;
+	border-radius: 3px;
 	font-size: 1.0em;
 	text-align: center;
 	white-space: nowrap;
 	color: $nav-item-color;
 	background-color: $nav-item-bg-color;
-	
+	transition: background-color 0.6s;
+
 	&:hover {
 		color: $nav-item-hover-color;
 		background-color: $nav-item-hover-bg-color;
@@ -70,35 +73,34 @@
 }
 
 @media (max-width: $M) {
-	.nav-menu-wrapper {
-		&:hover {
-			width: 100%;
-		}
-		
-		&:hover .is-menu-item {
-			background-color: $nav-item-hover-bg-color;
-		}
+	.nav-menu-wrapper:hover {
+		width: 100%;
 	}
 
 	.is-menu-item {
 		display: inline-block;
-		margin-left: $nav-margin;
+		margin-left: $nav-padding + $nav-margin;
+
+		.nav-menu-wrapper:hover & {
+			background-color: $nav-item-hover-bg-color;
+		}
 	}
-	
+
 	.nav-menu-list {
 		display: none;
 
 		.nav-menu-wrapper:hover & {
 			display: block;
-			margin-top: $nav-margin;
+			margin-top: $nav-padding + $nav-margin;
 			background-color: $nav-bg-color;
 		}
 
 		li {
 			display: list-item;
 		}
-		
+
 		.nav-item {
+			border-radius: 0;
 			text-align: left
 		}
 	}
@@ -110,25 +112,36 @@
  */
 
 .main-container {
-	padding-left: 10%;
-	padding-right: 20%;
-	margin-top: 3em;
+	padding: $main-container-padding;
 
-	@media (max-width: $XL) {
-		padding-left: 5%;
-		padding-right: 5%;
+	@media (max-width: $XXL) {
+		padding: $main-container-padding-lowres;
 	}
 }
 
 .pictures-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1em;
-	
-	margin: 0;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2em 1em;
+	align-items: center;
+	margin: 1em;
+
+	@media (max-width: $XXL) {
+		grid-template-columns: 1fr 1fr;
+	}
 
 	@media (max-width: $M) {
 		grid-template-columns: 1fr;
+	}
+
+	figure {
+		padding: $picture-padding;
+		background-color: $picture-bg-color;
+		box-shadow: 1px 3px 4px 1px $picture-shadow-color;
+	}
+
+	figcaption {
+		padding: 0.5em 0;
 	}
 }
 
@@ -137,56 +150,20 @@
 	height: 400px;
 }
 
+
 /*
  * Footer components
  */
 
 .footer-container {
-	padding-left: 10%;
-	padding-right: 20%;
+	padding: $footer-container-padding;
 
-	@media (max-width: $XL) {
-		padding-left: 5%;
-		padding-right: 5%;
+	@media (max-width: $XXL) {
+		padding: $footer-container-padding-lowres;
 	}
 }
 
-.footer-container > div {	
+.footer-content {
 	border-top: 1px dotted $footer-border-color;
-	padding: 0.5em 0;
 	color: $footer-color;
-}
-
-.separator {
-	padding: 0 0.5em;
-}
-
-
-/*
- * Icons
- */
-
-.menu-icon:before {
-	font-family: "FontAwesome";
-	content: $fa-bars;
-}
-
-.envelope-icon:before {
-	font-family: "FontAwesome";
-	content: $fa-envelope-o;
-}
-
-.phone-icon:before {
-	font-family: "FontAwesome";
-	content: $fa-phone;
-}
-
-.noSpam-icon:before {
-	font-family: "FontAwesome";
-	content: $fa-at;
-}
-
-.handMade-icon:before {
-	font-family: "FontAwesome";
-	content: $fa-paw;
 }

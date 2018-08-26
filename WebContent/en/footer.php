@@ -1,5 +1,5 @@
 <footer class="footer-container">
-	<div>
-		<span>Handmade in Munich.</span> <span class="separator">///</span>
+	<div class="footer-content">
+		<p>Handmade in Munich <span class="handMade-icon"></span></p>
 	</div>
 </footer>

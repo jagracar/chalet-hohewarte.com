@@ -10,7 +10,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Hohe Warte, holiday house, activities">
+<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Neukirchen am Großvenediger, holiday house, activities">
 <meta name="description" content="Chalet Hohe Warte activities">
 <meta name="author" content="Javier Gracia Carpio">
 

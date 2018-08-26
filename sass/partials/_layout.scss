@@ -59,13 +59,13 @@ body {
 
 	.nav-menu-wrapper {
 		position: absolute;
-		top: $nav-margin;
+		top: $nav-padding + $nav-margin;
 		left: 0;
 	}
 
 	.nav-lang-wrapper {
 		position: absolute;
-		top: $nav-margin;
-		right: $nav-margin;
+		top: $nav-padding + $nav-margin;
+		right: $nav-padding + $nav-margin;
 	}
 }
