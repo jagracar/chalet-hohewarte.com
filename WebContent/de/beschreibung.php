@@ -2,27 +2,15 @@
 	// General php variables
 	$page = 'beschreibung';
 	$homeDir = '../';
+	$keywords = 'Beschreibung';
+	$titleText = 'Beschreibung - Chalet Hohe Warte in Neukirchen am Großvenediger';
+	$descriptionText = 'Beschreibung Chalet Hohe Warte in Neukirchen am Großvenediger';
 	$alternative = 'description.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Neukirchen am Großvenediger, Ferienwohnung, Beschreibung">
-<meta name="description" content="Beschreibung Chalet Hohe Warte">
-<meta name="author" content="Javier Gracia Carpio">
-
-<link rel="icon" type="image/png" href="<?php echo $homeDir;?>favicon.png">
-<link rel="alternate" hreflang="en" href="https://chalet-hohewarte.com/en/<?php echo $alternative;?>">
-
-<!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
-
-<title>Beschreibung - Chalet Hohe Warte</title>
-
-</head>
+<?php include_once 'head.php';?>
 
 <body>
 	<!-- Navigation bar -->

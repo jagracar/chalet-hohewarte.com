@@ -502,15 +502,17 @@ body {
 @media (max-width: 688px) {
   .pictures-container {
     grid-template-columns: 1fr;
+    margin: 2em 0em 4em 0em;
   }
 }
 .pictures-container figure {
-  padding: 1em 1em 2em 1em;
+  padding: 1em;
   background-color: #f7f7f7;
   box-shadow: 1px 3px 4px 1px #999999;
 }
 .pictures-container figcaption {
   padding: 0.5em 0;
+  min-height: 3em;
 }
 
 .vertical-picture {
