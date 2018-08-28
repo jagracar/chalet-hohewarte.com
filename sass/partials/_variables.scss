@@ -1,10 +1,10 @@
 // Break points
-$XS: 18em; // 288px for 16px body font
-$S: 30em; // 480px for 16px body font
-$M: 50em; // 688px for 16px body font
-$L: 57em; // 912px for 16px body font
-$XL: 75em; // 1200px for 16px body font
-$XXL: 90em; // 1440px for 16px body font
+$XS: 288px; // 18em for 16px body font
+$S: 480px; // 30em for 16px body font
+$M: 688px; // 50em for 16px body font
+$L: 912px; // 57em for 16px body font
+$XL: 1200px; // 75em for 16px body font
+$XXL: 1440px; // 90em for 16px body font
 
 // General colors
 $general-text-color: lighten(black, 20%);
@@ -16,11 +16,10 @@ $footer-color: lighten($general-text-color, 20%);
 $footer-border-color: darken(white, 20%);
 
 // General variables
-$main-container-padding: 2.5em 15% 0 10%;
-$main-container-padding-lowres: 2.5em 5% 0 5%;
+$container-sides-padding: 10%;
+$container-sides-padding-lowres: 5%;
+$main-container-top-padding: 2.5em;
 $picture-padding: 1em 1em 2em 1em;
-$footer-container-padding: 0 15% 0 10%;
-$footer-container-padding-lowres: 0 5%;
 
 // Nav colors
 $alpha: 0.9;

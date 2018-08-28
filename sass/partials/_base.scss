@@ -47,6 +47,10 @@ h3 {
 	font-size: 1.5em;
 }
 
+p {
+	max-width: 0.8 * $XXL;
+}
+
 iframe {
 	border: none;
 }

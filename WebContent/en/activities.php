@@ -14,6 +14,7 @@
 <meta name="description" content="Chalet Hohe Warte activities">
 <meta name="author" content="Javier Gracia Carpio">
 
+<link rel="icon" type="image/png" href="<?php echo $homeDir;?>favicon.png">
 <link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative;?>">
 
 <!-- CSS files -->
