@@ -113,37 +113,25 @@
 
 .main-container {
 	padding: $main-container-top-padding $container-sides-padding 0  $container-sides-padding;
-
-	@media (max-width: $XXL) {
-		padding: $main-container-top-padding $container-sides-padding-lowres 0  $container-sides-padding-lowres;
-	}
 }
 
 .pictures-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 	gap: 2em 2em;
 	align-items: center;
 	justify-items: center;
-	margin: 2em 2em 4em 2em;
-
-	@media (max-width: $M) {
-		display: block;
-		margin: 2em 0em 4em 0em;
-	}
+	margin: 2em 0em 4em 0em;
 
 	figure {
 		padding: $picture-padding;
 		background-color: $picture-bg-color;
 		box-shadow: 1px 3px 4px 1px $picture-shadow-color;
-
-		@media (max-width: $M) {
-			margin: 2em 0;
-		}
 	}
 
 	figcaption {
-		padding: 0.5em 0;
+		padding-top: 0.5em;
 		min-height: 3em;
 	}
 
@@ -152,34 +140,79 @@
 	}
 }
 
+.horizontal-picture {
+	width : 100%;
+}
+
 .vertical-picture {
 	width : 68%;
-
-	@media (max-width: $M) {
-		width : 100%;
-	}
 }
 
 .map-container {
 	width: 100%;
-	height: 400px;
+	height: 50vmin;
+	max-height: 400px;
 }
 
 .slideshow-container {
 	display: flex;
+	flex-direction : row;
 	align-items: center;
 	width: 100%;
-	height: 400px;
+	height: 50vmin;
+	max-height: 400px;
 	overflow-x: auto;
 	overflow-y: hidden;
 
 	img {
-		flex: 0 0 70%;
-		min-width: 850px;
-		height: 100%;
+		height: 90vmin;
+		max-height: 90 / 50 * 400px;
 		object-fit: cover;
 	}
 }
+
+@media (max-width: $L) {
+	.main-container {
+		padding: $main-container-top-padding $container-sides-padding-lowres 0  $container-sides-padding-lowres;
+	}
+}
+
+@media (max-width: $M) {
+	.pictures-container {
+		display: block;
+
+		figure {
+			margin: 1em 0;
+		}
+	}
+
+	.vertical-picture {
+		width : 100%;
+	}
+}
+
+@media (max-width: $S) {
+	.pictures-container {
+		figure {
+			padding: $picture-padding-lowres;
+		}
+
+		figcaption {
+			padding: 0.5em;
+		}
+	}
+
+	.slideshow-container {
+		width: calc(100% + #{2 * $container-sides-padding-lowres});
+		margin-left: -$container-sides-padding-lowres;
+	}
+
+	.map-container {
+		width: calc(100% + #{2 * $container-sides-padding-lowres});
+		margin-left: -$container-sides-padding-lowres;
+	}
+}
+
 
 /*
  * Footer components
@@ -187,13 +220,15 @@
 
 .footer-container {
 	padding: 0 $container-sides-padding;
-
-	@media (max-width: $XXL) {
-		padding: 0 $container-sides-padding-lowres;
-	}
 }
 
 .footer-content {
 	border-top: 1px dotted $footer-border-color;
 	color: $footer-color;
+}
+
+@media (max-width: $L) {
+	.footer-container {
+		padding: 0 $container-sides-padding-lowres;
+	}
 }

@@ -1,28 +1,24 @@
-// Break points
-$XS: 288px; // 18em for 16px body font
-$S: 480px; // 30em for 16px body font
-$M: 816px; // 51em for 16px body font
-$L: 912px; // 57em for 16px body font
-$XL: 1200px; // 75em for 16px body font
-$XXL: 1440px; // 90em for 16px body font
+// Media queries breakpoint variables
+$S:  480px; // 30em for 16px body font
+$M:  816px; // 51em for 16px body font
+$L: 1440px; // 90em for 16px body font
 
-// General colors
-$general-text-color: lighten(black, 20%);
-$header-color: lighten(black, 40%);
-$link-color: lighten(blue, 20%);
-$picture-bg-color: darken(white, 3%);
-$picture-shadow-color: lighten(black, 60%);
-$footer-color: lighten($general-text-color, 20%);
-$footer-border-color: darken(white, 20%);
-
-// General variables
+// Size variables
+$nav-padding: 0.3em;
+$nav-margin: 0;
+$nav-header-width: 12em;
+$nav-item-padding: 0.4em 0.7em;
 $container-sides-padding: 10%;
 $container-sides-padding-lowres: 5%;
 $main-container-top-padding: 2.5em;
-$picture-padding: 1em;
+$picture-padding: 0.7em;
+$picture-padding-lowres: 0.2em;
 
-// Nav colors
+// Color variables
 $alpha: 0.9;
+$general-text-color: lighten(black, 20%);
+$header-color: lighten(black, 40%);
+$link-color: lighten(blue, 20%);
 $nav-bg-color: rgba(black, $alpha);
 $nav-shadow-color: rgba(lighten(black, 40%), $alpha);
 $nav-item-color: darken(white, 10%);
@@ -33,9 +29,7 @@ $nav-active-item-bg-color: rgba(green, 0.8*$alpha);
 $nav-active-item-hover-bg-color: lighten($nav-active-item-bg-color, 30%);
 $nav-reservation-item-hover-color: lighten($nav-item-color, 20%);
 $nav-reservation-item-hover-bg-color: lighten(red, 10%);
-
-// Nav variables
-$nav-padding: 0.3em;
-$nav-margin: 0;
-$nav-header-width: 12em;
-$nav-item-padding: 0.4em 0.7em;
+$picture-bg-color: darken(white, 3%);
+$picture-shadow-color: lighten(black, 60%);
+$footer-color: lighten($general-text-color, 20%);
+$footer-border-color: darken(white, 20%);

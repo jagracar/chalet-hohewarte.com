@@ -306,10 +306,6 @@ p {
   max-width: 1152px;
 }
 
-iframe {
-  border: none;
-}
-
 figure {
   margin: 0;
 }
@@ -484,91 +480,113 @@ body {
 .main-container {
   padding: 2.5em 10% 0 10%;
 }
-@media (max-width: 1440px) {
-  .main-container {
-    padding: 2.5em 5% 0 5%;
-  }
-}
 
 .pictures-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 2em 2em;
   -ms-flex-align: center;
       align-items: center;
   justify-items: center;
-  margin: 2em 2em 4em 2em;
-}
-@media (max-width: 816px) {
-  .pictures-container {
-    display: block;
-    margin: 2em 0em 4em 0em;
-  }
+  margin: 2em 0em 4em 0em;
 }
 .pictures-container figure {
-  padding: 1em;
+  padding: 0.7em;
   background-color: #f7f7f7;
   box-shadow: 1px 3px 4px 1px #999999;
 }
-@media (max-width: 816px) {
-  .pictures-container figure {
-    margin: 2em 0;
-  }
-}
 .pictures-container figcaption {
-  padding: 0.5em 0;
+  padding-top: 0.5em;
   min-height: 3em;
 }
 .pictures-container img {
   width: 100%;
 }
 
+.horizontal-picture {
+  width: 100%;
+}
+
 .vertical-picture {
   width: 68%;
-}
-@media (max-width: 816px) {
-  .vertical-picture {
-    width: 100%;
-  }
 }
 
 .map-container {
   width: 100%;
-  height: 400px;
+  height: 50vmin;
+  max-height: 400px;
 }
 
 .slideshow-container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  height: 400px;
+  height: 50vmin;
+  max-height: 400px;
   overflow-x: auto;
   overflow-y: hidden;
 }
 .slideshow-container img {
-  -ms-flex: 0 0 70%;
-      flex: 0 0 70%;
-  min-width: 850px;
-  height: 100%;
+  height: 90vmin;
+  max-height: 720px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media (max-width: 1440px) {
+  .main-container {
+    padding: 2.5em 5% 0 5%;
+  }
+}
+@media (max-width: 816px) {
+  .pictures-container {
+    display: block;
+  }
+  .pictures-container figure {
+    margin: 1em 0;
+  }
+
+  .vertical-picture {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .pictures-container figure {
+    padding: 0.2em;
+  }
+  .pictures-container figcaption {
+    padding: 0.5em;
+  }
+
+  .slideshow-container {
+    width: calc(100% + 10%);
+    margin-left: -5%;
+  }
+
+  .map-container {
+    width: calc(100% + 10%);
+    margin-left: -5%;
+  }
+}
 /*
  * Footer components
  */
 .footer-container {
   padding: 0 10%;
 }
-@media (max-width: 1440px) {
-  .footer-container {
-    padding: 0 5%;
-  }
-}
 
 .footer-content {
   border-top: 1px dotted #cccccc;
   color: #666666;
+}
+
+@media (max-width: 1440px) {
+  .footer-container {
+    padding: 0 5%;
+  }
 }
