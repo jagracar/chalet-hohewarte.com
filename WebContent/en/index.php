@@ -32,6 +32,17 @@ $addJQuery = false;
 			Hohe Tauern. Das malerische Zentrum von Neukirchen befindet sich in
 			einer Entfernung von etwa 10 Minuten zu Fuß.</p>
 
+		<figure>
+			<div class="slideshow-container">
+    			<img src="<?php echo $homeDir;?>pictures/a1_terrace_2.jpg"> 
+    			<img src="<?php echo $homeDir;?>pictures/a1_livingroom_1.jpg">
+    			<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"> 
+    			<img src="<?php echo $homeDir;?>pictures/a1_livingroom_4.jpg">
+     			<img src="<?php echo $homeDir;?>pictures/a1_terrace_4.jpg"> 
+     			<img src="<?php echo $homeDir;?>pictures/mountains_2.jpg"> 
+			</div>
+		</figure>
+
 		<p>Im Zentrum des Chaletdorfs werden eine Rezeption, ein Restaurant,
 			eine Bar, ein kleiner Supermarkt, ein Sportgeschäft und eine
 			Skischule realisiert. Auch für die kleinen Gäste gibt es
