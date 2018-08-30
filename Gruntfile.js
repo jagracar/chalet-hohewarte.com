@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
 		// grunt-jshint
 		jshint : {
-			build : [ 'Gruntfile.js', 'package.json', 'WebContent/js/location-map.js' ]
+			build : [ 'Gruntfile.js', 'package.json', 'WebContent/js/*.js' ]
 		},
 
 		// grunt-contrib-watch

@@ -20,11 +20,11 @@
 <!-- JavaScript files -->
 <?php endif ?>
 <?php if($addLeaflet): ?>
-<script src="<?php echo $homeDir;?>js/leaflet.js" async></script>
+<script src="<?php echo $homeDir;?>js/libs/leaflet.js" async></script>
 <script src="<?php echo $homeDir;?>js/location-map.js" async></script>
 <?php endif ?>
 <?php if($addJQuery): ?>
-<script src="<?php echo $homeDir;?>js/jquery-3.3.1.js" async></script>
-<script src="<?php echo $homeDir;?>js/test.js" async></script>
+<script src="<?php echo $homeDir;?>js/libs/jquery-3.3.1.js" async></script>
+<script src="<?php echo $homeDir;?>js/slideshowAnimation.js" async></script>
 <?php endif ?>
 </head>
