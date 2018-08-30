@@ -25,5 +25,6 @@
 <?php endif ?>
 <?php if($addJQuery): ?>
 <script src="<?php echo $homeDir;?>js/jquery-3.3.1.js" async></script>
+<script src="<?php echo $homeDir;?>js/test.js" async></script>
 <?php endif ?>
 </head>
