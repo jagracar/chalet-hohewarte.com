@@ -11,7 +11,10 @@ $addJQuery = false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <?php include_once 'head.php';?>
+<script src="<?php echo $homeDir;?>js/location-map.js" async></script>
+</head>
 
 <body>
 	<!-- Navigation bar -->

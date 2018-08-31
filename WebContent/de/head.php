@@ -1,4 +1,3 @@
-<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="National Park Chalet, Chalet Hohe Warte, Neukirchen am Großvenediger, Ferienwohnung, <?php echo $keywords;?>">
@@ -21,10 +20,7 @@
 <?php endif ?>
 <?php if($addLeaflet): ?>
 <script src="<?php echo $homeDir;?>js/libs/leaflet.js" async></script>
-<script src="<?php echo $homeDir;?>js/location-map.js" async></script>
 <?php endif ?>
 <?php if($addJQuery): ?>
 <script src="<?php echo $homeDir;?>js/libs/jquery-3.3.1.js" async></script>
-<script src="<?php echo $homeDir;?>js/slideshowAnimation.js" async></script>
 <?php endif ?>
-</head>

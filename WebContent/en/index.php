@@ -11,7 +11,10 @@ $addJQuery = true;
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <?php include_once 'head.php';?>
+<script src="<?php echo $homeDir;?>js/slideshowAnimation.js" async></script>
+</head>
 
 <body>
 	<!-- Navigation bar -->
@@ -29,7 +32,7 @@ $addJQuery = true;
     			<img src="<?php echo $homeDir;?>pictures/a1_livingroom_1.jpg">
     			<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"> 
     			<img src="<?php echo $homeDir;?>pictures/a1_livingroom_4.jpg">
-     			<img src="<?php echo $homeDir;?>pictures/a1_terrace_4.jpg"> 
+     			<img src="<?php echo $homeDir;?>pictures/a1_terrace_5.jpg"> 
      			<img src="<?php echo $homeDir;?>pictures/mountains_2.jpg"> 
 			</div>
 		</figure>

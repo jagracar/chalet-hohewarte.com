@@ -2,7 +2,7 @@
 // General php variables
 $homeDir = '../';
 $page = 'bilder';
-$keywords = 'Bilder, Zimmer, Terrase';
+$keywords = 'Bilder, Zimmer, Terrasse';
 $descriptionText = 'Bilder Chalet Hohe Warte in Neukirchen am Großvenediger';
 $titleText = 'Bilder - Chalet Hohe Warte in Neukirchen am Großvenediger';
 $alternative = 'pictures.php';
@@ -11,7 +11,9 @@ $addJQuery = false;
 ?>
 <!DOCTYPE html>
 <html lang="de">
+<head>
 <?php include_once 'head.php';?>
+</head>
 
 <body>
 	<!-- Navigation bar -->
@@ -42,10 +44,10 @@ $addJQuery = false;
 				<h3>Wohnung 1</h3>
 			</header>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>Das Wohnzimmer</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -74,12 +76,12 @@ $addJQuery = false;
 						<figcaption>Sauna.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>Die Schlafzimmer</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -91,16 +93,6 @@ $addJQuery = false;
 						<img src="<?php echo $homeDir;?>pictures/a1_bedroom2.jpg"
 							alt="Schlafzimmer 2 Blick" />
 						<figcaption>Schlafzimmer 2.</figcaption>
-					</figure>
-					<figure class="horizontal-picture">
-						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"
-							alt="Terrase von Schlafzimmer 1 und 2, Blick 1" />
-						<figcaption>Terrase von Schlafzimmer 1 und 2, Blick 1.</figcaption>
-					</figure>
-					<figure class="vertical-picture">
-						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_2.jpg"
-							alt="Terrase von Schlafzimmer 1 und 2, Blick 2" />
-						<figcaption>Terrase von Schlafzimmer 1 und 2, Blick 2.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_bedroom3_1.jpg"
@@ -117,52 +109,67 @@ $addJQuery = false;
 							alt="Schlafzimmer 3, Blick 3" />
 						<figcaption>Schlafzimmer 3, Blick 3.</figcaption>
 					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"
+							alt="Terrasse von Schlafzimmer 1 und 2, Blick 1" />
+						<figcaption>Terrasse von Schlafzimmer 1 und 2, Blick 1.</figcaption>
+					</figure>
+					<figure class="vertical-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_2.jpg"
+							alt="Terrasse von Schlafzimmer 1 und 2, Blick 2" />
+						<figcaption>Terrasse von Schlafzimmer 1 und 2, Blick 2.</figcaption>
+					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
-					<h4>Die Terrase</h4>
-				</figcaption>
+			<section>
+				<header>
+					<h4>Die Terrasse</h4>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_1.jpg"
-							alt="Terrase, Blick 1" />
-						<figcaption>Terrase, Blick 1.</figcaption>
+							alt="Terrasse, Blick 1" />
+						<figcaption>Terrasse, Blick 1.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_2.jpg"
-							alt="Terrase, Blick 2" />
-						<figcaption>Terrase, Blick 2.</figcaption>
+							alt="Terrasse, Blick 2" />
+						<figcaption>Terrasse, Blick 2.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_3.jpg"
-							alt="Terrase, Blick 3" />
-						<figcaption>Terrase, Blick 3.</figcaption>
+							alt="Terrasse, Blick 3" />
+						<figcaption>Terrasse, Blick 3.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_4.jpg"
-							alt="Terrase, Blick 4" />
-						<figcaption>Terrase, Blick 4.</figcaption>
+							alt="Terrasse, Blick 4" />
+						<figcaption>Terrasse, Blick 4.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_5.jpg"
-							alt="Terrase, Blick 5" />
-						<figcaption>Terrase, Blick 5.</figcaption>
+							alt="Terrasse, Blick 5" />
+						<figcaption>Terrasse, Blick 5.</figcaption>
 					</figure>
-					<figure class="vertical-picture">
+					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_6.jpg"
-							alt="Terrase, Blick 6" />
-						<figcaption>Terrase, Blick 6.</figcaption>
+							alt="Terrasse, Blick 6" />
+						<figcaption>Terrasse, Blick 6.</figcaption>
 					</figure>
 					<figure class="vertical-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_7.jpg"
-							alt="Terrase, Blick 7" />
-						<figcaption>Terrase, Blick 7.</figcaption>
+							alt="Terrasse, Blick 7" />
+						<figcaption>Terrasse, Blick 7.</figcaption>
+					</figure>
+					<figure class="vertical-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_terrace_8.jpg"
+							alt="Terrasse, Blick 8" />
+						<figcaption>Terrasse, Blick 8.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 		</section>
 
 		<section>
@@ -170,24 +177,34 @@ $addJQuery = false;
 				<h3>Wohnung 2</h3>
 			</header>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>Das Wohnzimmer</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
-						<img src="<?php echo $homeDir;?>pictures/a2_livingroom.jpg"
-							alt="Wohnzimmer Blick" />
-						<figcaption>Wohnzimmer.</figcaption>
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_1.jpg"
+							alt="Wohnzimmer, Blick 1" />
+						<figcaption>Wohnzimmer, Blick 1.</figcaption>
+					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_2.jpg"
+							alt="Wohnzimmer, Blick 2" />
+						<figcaption>Wohnzimmer, Blick 2.</figcaption>
+					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_3.jpg"
+							alt="Wohnzimmer, Blick 3" />
+						<figcaption>Wohnzimmer, Blick 3.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>Die Schlafzimmer</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -195,47 +212,52 @@ $addJQuery = false;
 							alt="Schlafzimmer 1 Blick" />
 						<figcaption>Schlafzimmer 1.</figcaption>
 					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_toilet.jpg"
+							alt="Toilette Blick" />
+						<figcaption>Toilette.</figcaption>
+					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
-					<h4>Die Terrase</h4>
-				</figcaption>
+			<section>
+				<header>
+					<h4>Die Terrasse</h4>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_1.jpg"
-							alt="Terrase, Blick 1" />
-						<figcaption>Terrase, Blick 1.</figcaption>
+							alt="Terrasse, Blick 1" />
+						<figcaption>Terrasse, Blick 1.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_2.jpg"
-							alt="Terrase, Blick 2" />
-						<figcaption>Terrase, Blick 2.</figcaption>
+							alt="Terrasse, Blick 2" />
+						<figcaption>Terrasse, Blick 2.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_3.jpg"
-							alt="Terrase, Blick 3" />
-						<figcaption>Terrase, Blick 3.</figcaption>
+							alt="Terrasse, Blick 3" />
+						<figcaption>Terrasse, Blick 3.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_4.jpg"
-							alt="Terrase, Blick 4" />
-						<figcaption>Terrase, Blick 4.</figcaption>
+							alt="Terrasse, Blick 4" />
+						<figcaption>Terrasse, Blick 4.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_5.jpg"
-							alt="Terrase, Blick 5" />
-						<figcaption>Terrase, Blick 5.</figcaption>
+							alt="Terrasse, Blick 5" />
+						<figcaption>Terrasse, Blick 5.</figcaption>
 					</figure>
 					<figure class="vertical-picture">
 						<img src="<?php echo $homeDir;?>pictures/a2_terrace_6.jpg"
-							alt="Terrase, Blick 6" />
-						<figcaption>Terrase, Blick 6.</figcaption>
+							alt="Terrasse, Blick 6" />
+						<figcaption>Terrasse, Blick 6.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 		</section>
 
 		<section>

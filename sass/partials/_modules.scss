@@ -65,13 +65,6 @@
 	}
 }
 
-.is-reservation-item {
-	&:hover {
-		color: $nav-reservation-item-hover-color;
-		background-color: $nav-reservation-item-hover-bg-color;
-	}
-}
-
 @media (max-width: $M) {
 	.nav-menu-wrapper:hover {
 		width: 100%;
@@ -122,12 +115,11 @@
 	gap: 2em 2em;
 	align-items: center;
 	justify-items: center;
-	margin: 2em 0em 4em 0em;
 
 	figure {
 		padding: $picture-padding;
 		background-color: $picture-bg-color;
-		box-shadow: 1px 3px 4px 1px $picture-shadow-color;
+		box-shadow: 1px 3px 4px 1px $shadow-color;
 	}
 
 	figcaption {
@@ -171,6 +163,26 @@
 	}
 }
 
+.reservation-link {
+	display: inline-block;
+	padding: 1em;
+	margin: 1em;
+	border-radius: 2px;
+	font-size: 1.1em;
+	text-align: center;
+	white-space: nowrap;
+	color: $reservation-link-color;
+	background-color: $reservation-link-bg-color;
+	box-shadow: 2px 3px 4px 1px $shadow-color;
+	transition: color 0.6s, background-color 0.6s;
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $reservation-link-hover-color;
+		background-color: $reservation-link-hover-bg-color;
+	}
+}
+
 @media (max-width: $L) {
 	.main-container {
 		padding: $main-container-top-padding $container-sides-padding-lowres 0  $container-sides-padding-lowres;
@@ -188,6 +200,12 @@
 
 	.vertical-picture {
 		width : 100%;
+	}
+
+	.reservation-link {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 

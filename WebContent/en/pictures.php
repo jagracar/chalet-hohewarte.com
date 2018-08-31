@@ -11,7 +11,9 @@ $addJQuery = false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <?php include_once 'head.php';?>
+</head>
 
 <body>
 	<!-- Navigation bar -->
@@ -42,10 +44,10 @@ $addJQuery = false;
 				<h3>Apartment 1</h3>
 			</header>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The living room</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -74,12 +76,12 @@ $addJQuery = false;
 						<figcaption>Sauna.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The bedrooms</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -91,16 +93,6 @@ $addJQuery = false;
 						<img src="<?php echo $homeDir;?>pictures/a1_bedroom2.jpg"
 							alt="Bedroom 2 view" />
 						<figcaption>Bedroom 2.</figcaption>
-					</figure>
-					<figure class="horizontal-picture">
-						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"
-							alt="Terrace from bedrooms 1 and 2, view 1" />
-						<figcaption>Terrace from bedrooms 1 and 2, view 1.</figcaption>
-					</figure>
-					<figure class="vertical-picture">
-						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_2.jpg"
-							alt="Terrace from bedrooms 1 and 2, view 2" />
-						<figcaption>Terrace from bedrooms 1 and 2, view 2.</figcaption>
 					</figure>
 					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_bedroom3_1.jpg"
@@ -117,13 +109,23 @@ $addJQuery = false;
 							alt="Bedroom 3, view 3" />
 						<figcaption>Bedroom 3, view 3.</figcaption>
 					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_1.jpg"
+							alt="Terrace from bedrooms 1 and 2, view 1" />
+						<figcaption>Terrace from bedrooms 1 and 2, view 1.</figcaption>
+					</figure>
+					<figure class="vertical-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_bedroom_terrace_2.jpg"
+							alt="Terrace from bedrooms 1 and 2, view 2" />
+						<figcaption>Terrace from bedrooms 1 and 2, view 2.</figcaption>
+					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The terrace</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -151,7 +153,7 @@ $addJQuery = false;
 							alt="Terrace, view 5" />
 						<figcaption>Terrace, view 5.</figcaption>
 					</figure>
-					<figure class="vertical-picture">
+					<figure class="horizontal-picture">
 						<img src="<?php echo $homeDir;?>pictures/a1_terrace_6.jpg"
 							alt="Terrace, view 6" />
 						<figcaption>Terrace, view 6.</figcaption>
@@ -161,8 +163,13 @@ $addJQuery = false;
 							alt="Terrace, view 7" />
 						<figcaption>Terrace, view 7.</figcaption>
 					</figure>
+					<figure class="vertical-picture">
+						<img src="<?php echo $homeDir;?>pictures/a1_terrace_8.jpg"
+							alt="Terrace, view 8" />
+						<figcaption>Terrace, view 8.</figcaption>
+					</figure>
 				</div>
-			</figure>
+			</section>
 		</section>
 
 		<section>
@@ -170,24 +177,34 @@ $addJQuery = false;
 				<h3>Apartment 2</h3>
 			</header>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The living room</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
-						<img src="<?php echo $homeDir;?>pictures/a2_livingroom.jpg"
-							alt="Living room view" />
-						<figcaption>Living room.</figcaption>
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_1.jpg"
+							alt="Living room, view 1" />
+						<figcaption>Living room, view 1.</figcaption>
+					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_2.jpg"
+							alt="Living room, view 2" />
+						<figcaption>Living room, view 2.</figcaption>
+					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_livingroom_3.jpg"
+							alt="Living room, view 3" />
+						<figcaption>Living room, view 3.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The bedrooms</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -195,13 +212,18 @@ $addJQuery = false;
 							alt="Bedroom 1 view" />
 						<figcaption>Bedroom 1.</figcaption>
 					</figure>
+					<figure class="horizontal-picture">
+						<img src="<?php echo $homeDir;?>pictures/a2_toilet.jpg"
+							alt="Toilet view" />
+						<figcaption>Toilet.</figcaption>
+					</figure>
 				</div>
-			</figure>
+			</section>
 
-			<figure>
-				<figcaption>
+			<section>
+				<header>
 					<h4>The terrace</h4>
-				</figcaption>
+				</header>
 
 				<div class="pictures-container">
 					<figure class="horizontal-picture">
@@ -235,7 +257,7 @@ $addJQuery = false;
 						<figcaption>Terrace, view 6.</figcaption>
 					</figure>
 				</div>
-			</figure>
+			</section>
 		</section>
 
 		<section>
