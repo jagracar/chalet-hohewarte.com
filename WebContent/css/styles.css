@@ -392,8 +392,8 @@ body {
   width: 100%;
   padding: 0.3em;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.9);
+  background: linear-gradient(to right, rgba(26, 26, 26, 0.96), rgba(64, 64, 64, 0.96) 30%, rgba(64, 64, 64, 0.96) 70%, rgba(26, 26, 26, 0.96));
+  box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.96);
 }
 .nav-container a:hover, .nav-container a:focus {
   text-decoration: none;
@@ -426,7 +426,7 @@ body {
 }
 .nav-item:hover {
   color: white;
-  background-color: rgba(77, 77, 77, 0.72);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .is-header-item:hover {
@@ -438,10 +438,10 @@ body {
 }
 
 .is-active-item {
-  background-color: rgba(0, 128, 0, 0.72);
+  background-color: rgba(0, 150, 255, 0.7);
 }
 .is-active-item:hover {
-  background-color: rgba(26, 255, 26, 0.72);
+  background-color: #0096ff;
 }
 
 @media (max-width: 816px) {
@@ -451,10 +451,12 @@ body {
 
   .is-menu-item {
     display: inline-block;
+    padding: 0.35em 0.65em;
+    border: 0.05em solid rgba(255, 255, 255, 0.1);
     margin-left: 0.3em;
   }
   .nav-menu-wrapper:hover .is-menu-item {
-    background-color: rgba(77, 77, 77, 0.72);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .nav-menu-list {
@@ -463,10 +465,11 @@ body {
   .nav-menu-wrapper:hover .nav-menu-list {
     display: block;
     margin-top: 0.3em;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to right, rgba(26, 26, 26, 0.96), rgba(64, 64, 64, 0.96) 30%, rgba(64, 64, 64, 0.96) 70%, rgba(26, 26, 26, 0.96));
   }
   .nav-menu-list li {
     display: list-item;
+    border-top: 0.05em solid rgba(255, 255, 255, 0.1);
   }
   .nav-menu-list .nav-item {
     border-radius: 0;
@@ -491,7 +494,7 @@ body {
 }
 .pictures-container figure {
   padding: 0.7em;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   box-shadow: 1px 3px 4px 1px #999999;
 }
 .pictures-container figcaption {
@@ -541,18 +544,15 @@ body {
   padding: 1em 1.5em;
   margin: 1em;
   border-radius: 3px;
-  font-size: 1.1em;
   text-align: center;
-  white-space: nowrap;
   color: #e6e6e6;
-  background-color: #ff8833;
+  background-color: #157ec8;
   box-shadow: 1px 3px 4px 1px #999999;
   transition: color 0.6s, background-color 0.6s;
 }
 .reservation-link:hover, .reservation-link:focus {
-  text-decoration: none;
   color: white;
-  background-color: #ff6a00;
+  background-color: #2899e8;
 }
 
 @media (max-width: 1440px) {

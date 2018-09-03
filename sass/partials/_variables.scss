@@ -7,7 +7,9 @@ $L: 1440px; // 90em for 16px body font
 $nav-padding: 0.3em;
 $nav-margin: 0;
 $nav-header-width: 12em;
+$nav-item-border: 0.05em;
 $nav-item-padding: 0.4em 0.7em;
+$nav-item-padding-with-border: 0.35em 0.65em;
 $container-sides-padding: 10%;
 $container-sides-padding-lowres: 5%;
 $main-container-top-padding: 2.5em;
@@ -15,23 +17,28 @@ $picture-padding: 0.7em;
 $picture-padding-lowres: 0.2em;
 
 // Color variables
-$alpha: 0.9;
+$alpha: 0.96;
 $general-text-color: lighten(black, 20%);
 $shadow-color: lighten(black, 60%);
 $header-color: lighten(black, 40%);
 $link-color: lighten(blue, 20%);
-$nav-bg-color: rgba(black, $alpha);
+$border-color: rgba(white, 0.1);
+$nav-bg-color: rgba(lighten(black, 10%), $alpha);
+$nav-middle-bg-color: rgba(lighten(black, 25%), $alpha);
 $nav-shadow-color: rgba(darken($shadow-color, 20%), $alpha);
 $nav-item-color: darken(white, 10%);
-$nav-item-bg-color: transparent;
 $nav-item-hover-color: lighten($nav-item-color, 20%);
-$nav-item-hover-bg-color: rgba(lighten($nav-bg-color, 30%), 0.8*$alpha);
-$nav-active-item-bg-color: rgba(green, 0.8*$alpha);
-$nav-active-item-hover-bg-color: lighten($nav-active-item-bg-color, 30%);
-$picture-bg-color: darken(white, 3%);
-$reservation-link-color: darken(white, 10%);
-$reservation-link-hover-color: white;
-$reservation-link-bg-color: lighten(#ff6a00,10%);
-$reservation-link-hover-bg-color: #ff6a00;
+$nav-item-bg-color: transparent;
+$nav-item-hover-bg-color: rgba(white, 0.3);
+$nav-active-item-bg-color: rgba(0, 150, 255, 0.7);
+$nav-active-item-hover-bg-color: rgba(0, 150, 255, 1.0);
+$picture-bg-color: darken(white, 2%);
+$reservation-link-color: $nav-item-color;
+$reservation-link-hover-color: $nav-item-hover-color;
+$reservation-link-bg-color: rgb(21, 126, 200);
+$reservation-link-hover-bg-color: lighten($reservation-link-bg-color, 10%);
 $footer-color: lighten($general-text-color, 20%);
 $footer-border-color: darken(white, 20%);
+
+// Other variables
+$speed: 0.6s;

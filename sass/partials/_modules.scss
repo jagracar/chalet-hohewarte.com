@@ -6,7 +6,7 @@
 	width: 100%;
 	padding: $nav-padding;
 	margin: $nav-margin;
-	background-color: $nav-bg-color;
+	background: linear-gradient(to right, $nav-bg-color, $nav-middle-bg-color 30%, $nav-middle-bg-color 70%, $nav-bg-color);
 	box-shadow: 0px 3px 3px $nav-shadow-color;
 
 	a:hover, a:focus {
@@ -39,7 +39,7 @@
 	white-space: nowrap;
 	color: $nav-item-color;
 	background-color: $nav-item-bg-color;
-	transition: color 0.6s, background-color 0.6s;
+	transition: color $speed, background-color $speed;
 
 	&:hover {
 		color: $nav-item-hover-color;
@@ -72,6 +72,8 @@
 
 	.is-menu-item {
 		display: inline-block;
+		padding: $nav-item-padding-with-border;
+		border: $nav-item-border solid $border-color;
 		margin-left: $nav-padding + $nav-margin;
 
 		.nav-menu-wrapper:hover & {
@@ -85,11 +87,12 @@
 		.nav-menu-wrapper:hover & {
 			display: block;
 			margin-top: $nav-padding + $nav-margin;
-			background-color: $nav-bg-color;
+			background: linear-gradient(to right, $nav-bg-color, $nav-middle-bg-color 30%, $nav-middle-bg-color 70%, $nav-bg-color);
 		}
 
 		li {
 			display: list-item;
+			border-top: $nav-item-border solid $border-color;
 		}
 
 		.nav-item {
@@ -168,16 +171,13 @@
 	padding: 1em 1.5em;
 	margin: 1em;
 	border-radius: 3px;
-	font-size: 1.1em;
 	text-align: center;
-	white-space: nowrap;
 	color: $reservation-link-color;
 	background-color: $reservation-link-bg-color;
 	box-shadow: 1px 3px 4px 1px $shadow-color;
-	transition: color 0.6s, background-color 0.6s;
+	transition: color $speed, background-color $speed;
 
 	&:hover, &:focus {
-		text-decoration: none;
 		color: $reservation-link-hover-color;
 		background-color: $reservation-link-hover-bg-color;
 	}
