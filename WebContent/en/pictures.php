@@ -8,12 +8,13 @@ $descriptionText = 'Pictures of Chalet Hohe Warte in Neukirchen am Großvenedige
 $titleText = 'Pictures - Chalet Hohe Warte in Neukirchen am Großvenediger';
 $alternative = 'bilder.php';
 $addLeaflet = false;
-$addJQuery = false;
+$addJQuery = true;
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php include_once 'head.php';?>
+<script src="<?php echo $homeDir;?>js/zoomImage.js" async></script>
 </head>
 
 <body>
