@@ -1,0 +1,101 @@
+/*
+ * Pictures components
+ */
+
+.pictures-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 2em 2em;
+	align-items: center;
+	justify-items: center;
+
+	figure {
+		padding: $picture-padding;
+		background-color: $picture-bg-color;
+		box-shadow: 1px 3px 4px 1px $shadow-color;
+	}
+
+	figcaption {
+		padding-top: 0.5em;
+		min-height: 3em;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.horizontal-figure {
+	width: 100%;
+}
+
+.vertical-figure {
+	width: 68%;
+}
+
+.zoomable-picture {
+	cursor: zoom-in;
+}
+
+.zoom-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: $main-container-top-padding;
+	background: $zoom-container-bg-color;
+	cursor: zoom-out;
+
+	figure {
+		padding: $picture-padding;
+		background-color: $picture-bg-color;
+	}
+
+	figcaption {
+		padding-top: 0.5em;
+		min-height: 3em;
+	}
+
+	img {
+		max-width: calc(100vw - 4em);
+		max-height: calc(100vh - 10em);
+	}
+}
+
+
+// Style for small and medium devices
+
+@media (max-width: $M) {
+	.pictures-container {
+		display: block;
+
+		figure {
+			margin: 1em 0;
+		}
+	}
+
+	.vertical-figure {
+		width: 100%;
+	}
+}
+
+
+// Style for small devices
+
+@media (max-width: $S) {
+	.pictures-container {
+		figure {
+			padding: $picture-padding-lowres;
+		}
+
+		figcaption {
+			padding: 0.5em;
+		}
+	}
+}
+

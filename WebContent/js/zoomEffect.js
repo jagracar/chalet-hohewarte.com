@@ -4,7 +4,7 @@ var zoomEffect = {
 	// Read the settings
 	zoomEffect.readSettings(settings);
 
-	// Add the effect only for medium sized displays
+	// Add the effect only if the window width is large enough
 	if (window.innerWidth > zoomEffect.settings.minWidth) {
 	    // Add the zoom container
 	    zoomEffect.addContainer();
@@ -12,8 +12,8 @@ var zoomEffect = {
 	    // Add the zoom effect to all the pictures
 	    zoomEffect.addEffectToPictures();
 	} else {
-	    // Remove the zoom effect to all the pictures
-	    zoomEffect.removeEffectToPictures();
+	    // Remove the zoom effect from all the pictures
+	    zoomEffect.removeEffectFromPictures();
 	}
     },
 
@@ -39,13 +39,10 @@ var zoomEffect = {
 	zoomEffect.image = $("<img></img>").appendTo(figure);
 	zoomEffect.caption = $("<figcaption></figcaption>").appendTo(figure);
 
-	// Fade out the container when it's clicked
+	// Fade out and clean the container when it's clicked
 	zoomEffect.container.on("click", function() {
-	    $(this).fadeOut("slow");
+	    $(this).fadeOut("slow", zoomEffect.cleanContainer);
 	});
-
-	// Indicate that clicking will zoom out
-	zoomEffect.container.css("cursor", "zoom-out");
 
 	// Hide the container and append it to the body element
 	zoomEffect.container.hide(0).appendTo("body");
@@ -62,7 +59,7 @@ var zoomEffect = {
 	pictures.on("click", zoomEffect.zoom);
     },
 
-    removeEffectToPictures : function() {
+    removeEffectFromPictures : function() {
 	// Get all the picture elements
 	var pictures = $("picture");
 
@@ -90,6 +87,15 @@ var zoomEffect = {
 
 	// Show the container
 	zoomEffect.container.fadeIn("slow");
+    },
+
+    cleanContainer : function() {
+	// Clear the container image
+	zoomEffect.image.attr("src", "");
+	zoomEffect.image.attr("alt", "");
+
+	// Clear the container caption
+	zoomEffect.caption.html("");
     }
 };
 
@@ -98,7 +104,7 @@ window.onload = function() {
     zoomEffect.init();
 };
 
-// To be run each time the windo is resized
+// To be run each time the window is resized
 window.onresize = function() {
     zoomEffect.init();
 };

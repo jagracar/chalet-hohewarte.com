@@ -1,106 +1,91 @@
-// The scroll animation function
-function scrollAnimation(element) {
-	// Get the current scroll width
-	var scrollWidth = element.get(0).scrollWidth;
+// The slideshow animation object
+var slideshow = {
+    init : function() {
+	// Define the classes that set the animation state
+	slideshow.animationClass = "scrolling";
+	slideshow.pausedClass = "paused";
+
+	// Get the slideshow container
+	slideshow.container = $(".slideshow-container");
+
+	// Pause the scroll animation on mouse down events
+	slideshow.container.on("mousedown touchstart", slideshow.pauseAnimation);
+
+	// Continue the scroll animation on mouse up events
+	slideshow.container.on("mouseup touchend", slideshow.continueAnimation);
+
+	// Toogle the scroll animation on click events
+	slideshow.container.on("click", slideshow.toogleAnimation);
+
+	// Start the animation
+	slideshow.container.trigger("click");
+    },
+
+    pauseAnimation : function(event) {
+	// Check if the animation is active
+	if (slideshow.container.hasClass(slideshow.animationClass)) {
+	    // Check if the animation is already paused
+	    if (slideshow.container.hasClass(slideshow.pausedClass)) {
+		// Stop the animation completely
+		slideshow.container.removeClass(slideshow.animationClass);
+		slideshow.container.removeClass(slideshow.pausedClass);
+	    } else {
+		// Pause the animation
+		slideshow.container.addClass(slideshow.pausedClass);
+		slideshow.container.stop();
+	    }
+	}
+    },
+
+    continueAnimation : function(event) {
+	// Check if the animation is paused
+	if (slideshow.container.hasClass(slideshow.pausedClass)) {
+	    // Continue the animation
+	    slideshow.container.removeClass(slideshow.pausedClass);
+	    slideshow.scrollAnimation();
+	}
+    },
+
+    toogleAnimation : function(event) {
+	// Check if the animation is active
+	if (slideshow.container.hasClass(slideshow.animationClass)) {
+	    // Check if the animation is paused
+	    if (slideshow.container.hasClass(slideshow.pausedClass)) {
+		// Continue the animation
+		slideshow.container.removeClass(slideshow.pausedClass);
+		slideshow.scrollAnimation();
+	    } else {
+		// Stop the animation
+		slideshow.container.removeClass(slideshow.animationClass);
+		slideshow.container.stop();
+	    }
+	} else {
+	    // Start the animation
+	    slideshow.container.addClass(slideshow.animationClass);
+	    slideshow.scrollAnimation();
+	}
+    },
+
+    scrollAnimation : function() {
+	// Get the container maximum scroll left value
+	var maxScrollLeft = slideshow.container.get(0).scrollWidth - slideshow.container.get(0).clientWidth;
+
+	// Calculate the animation time
+	var animationTime = (maxScrollLeft - slideshow.container.scrollLeft()) * 80000 / maxScrollLeft;
 
 	// Start the scroll animation
-	element.animate({
-		scrollLeft : scrollWidth
-	}, (scrollWidth - element.scrollLeft()) * 80000 / scrollWidth, 'linear');
-}
+	slideshow.container.animate({
+	    scrollLeft : maxScrollLeft
+	}, animationTime, 'linear', slideshow.removeClasses);
+    },
 
-// The pause animation function
-function pauseAnimation(event) {
-	// Get the jQuery element
-	var element = $(this);
-
-	// Get the animation class names
-	var animationClass = event.data.animationClass;
-	var pausedClass = event.data.pausedClass;
-
-	// Check if the animation is active
-	if (element.hasClass(animationClass)) {
-		// Check if the animation is already paused
-		if (element.hasClass(pausedClass)) {
-			// Stop the animation completely
-			element.removeClass(animationClass);
-			element.removeClass(pausedClass);
-		} else {
-			// Pause the animation
-			element.addClass(pausedClass);
-			element.stop();
-		}
-	}
-}
-
-// The continue animation function
-function continueAnimation(event) {
-	// Get the jQuery element
-	var element = $(this);
-
-	// Get the animation class names and the animation function
-	var animationClass = event.data.animationClass;
-	var pausedClass = event.data.pausedClass;
-	var animationFunction = event.data.animationFunction;
-
-	// Check if the animation is active and is paused
-	if (element.hasClass(animationClass) && element.hasClass(pausedClass)) {
-		// Continue the animation
-		element.removeClass(pausedClass);
-		animationFunction(element);
-	}
-}
-
-// The toogle animation function
-function toogleAnimation(event) {
-	// Get the jQuery element
-	var element = $(this);
-
-	// Get the animation class names and the animation function
-	var animationClass = event.data.animationClass;
-	var pausedClass = event.data.pausedClass;
-	var animationFunction = event.data.animationFunction;
-
-	// Check if the animation is active
-	if (element.hasClass(animationClass)) {
-		// Check if the animation is paused
-		if (element.hasClass(pausedClass)) {
-			// Continue the animation
-			element.removeClass(pausedClass);
-			animationFunction(element);
-		} else {
-			// Stop the animation
-			element.removeClass(animationClass);
-			element.stop();
-		}
-	} else {
-		// Start the animation
-		element.addClass(animationClass);
-		animationFunction(element);
-	}
-}
+    removeClasses : function() {
+	slideshow.container.removeClass(slideshow.animationClass);
+	slideshow.container.removeClass(slideshow.pausedClass);
+    }
+};
 
 // To be run when the page finishes loading all the images
 window.onload = function() {
-	// Get the slideshow container
-	var slideshowContainer = $(".slideshow-container");
-
-	// Define the data that should be passed to the event handler functions
-	var data = {
-		pausedClass : "paused",
-		animationClass : "scrolling",
-		animationFunction : scrollAnimation
-	};
-
-	// Pause the scroll animation of mouse down events
-	slideshowContainer.on("mousedown touchstart", data, pauseAnimation);
-
-	// Continue the scroll animation on mouse up events
-	slideshowContainer.on("mouseup touchend", data, continueAnimation);
-
-	// Toogle the scroll animation on click events
-	slideshowContainer.on("click", data, toogleAnimation);
-
-	// Start the animation
-	slideshowContainer.trigger("click");
+    slideshow.init();
 };
