@@ -135,12 +135,16 @@
 	}
 }
 
-.horizontal-picture {
+.horizontal-figure {
 	width : 100%;
 }
 
-.vertical-picture {
+.vertical-figure {
 	width : 68%;
+}
+
+.zoomable-picture {
+	cursor : zoom-in;
 }
 
 .map-container {
@@ -163,6 +167,34 @@
 		height: 90vmin;
 		max-height: 90 / 50 * 400px;
 		object-fit: cover;
+	}
+}
+
+.zoom-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: $main-container-top-padding;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $zoom-container-bg-color;
+
+	figure {
+		padding: $picture-padding;
+		background-color: $picture-bg-color;
+	}
+
+	figcaption {
+		padding-top: 0.5em;
+		min-height: 3em;
+	}
+
+	img {
+		max-width: calc(100vw - 4em);
+		max-height: calc(100vh - 10em);
 	}
 }
 
@@ -198,7 +230,7 @@
 		}
 	}
 
-	.vertical-picture {
+	.vertical-figure {
 		width : 100%;
 	}
 

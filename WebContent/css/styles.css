@@ -505,12 +505,16 @@ body {
   width: 100%;
 }
 
-.horizontal-picture {
+.horizontal-figure {
   width: 100%;
 }
 
-.vertical-picture {
+.vertical-figure {
   width: 68%;
+}
+
+.zoomable-picture {
+  cursor: zoom-in;
 }
 
 .map-container {
@@ -537,6 +541,34 @@ body {
   max-height: 720px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.zoom-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 2.5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.zoom-container figure {
+  padding: 0.7em;
+  background-color: #fafafa;
+}
+.zoom-container figcaption {
+  padding-top: 0.5em;
+  min-height: 3em;
+}
+.zoom-container img {
+  max-width: calc(100vw - 4em);
+  max-height: calc(100vh - 10em);
 }
 
 .reservation-link {
@@ -568,7 +600,7 @@ body {
     margin: 1em 0;
   }
 
-  .vertical-picture {
+  .vertical-figure {
     width: 100%;
   }
 
