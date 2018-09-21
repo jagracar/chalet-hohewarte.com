@@ -12,14 +12,15 @@ $addJQuery = false;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include_once 'head.php';?>
+<?php require 'head.php';?>
 <script src="<?php echo $homeDir;?>js/location-map.js" async></script>
 </head>
 
 <body>
 	<!-- Navigation bar -->
-<?php include_once 'navBar.php';?>
+<?php require 'navBar.php';?>
 
+	<!-- Main content -->
 	<main class="main-container">
 	<article class="content">
 		<header>
@@ -52,7 +53,7 @@ $addJQuery = false;
 	</main>
 
 	<!-- Footer -->
-<?php include_once 'footer.php';?>
+<?php require 'footer.php';?>
 
 </body>
 </html>
