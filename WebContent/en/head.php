@@ -7,20 +7,20 @@
 <title><?php echo $titleText;?></title>
 
 <link rel="alternate" hreflang="de" href="https://chalet-hohewarte.com/de/<?php echo $alternative;?>">
-<link rel="icon" type="image/png" href="<?php echo $homeDir;?>favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
 
 <!-- CSS files -->
-<link rel="stylesheet" href="<?php echo $homeDir;?>css/styles.css">
+<link rel="stylesheet" href="/css/styles.css">
 <?php if($addLeaflet): ?>
-<link rel="stylesheet" href="<?php echo $homeDir;?>css/leaflet/leaflet.css">
+<link rel="stylesheet" href="/css/leaflet/leaflet.css">
 <?php endif ?>
 <?php if($addLeaflet || $addJQuery): ?>
 
 <!-- JavaScript files -->
 <?php endif ?>
 <?php if($addLeaflet): ?>
-<script src="<?php echo $homeDir;?>js/libs/leaflet.js" async></script>
+<script type="text/javascript" src="/js/libs/leaflet.js" async></script>
 <?php endif ?>
 <?php if($addJQuery): ?>
-<script src="<?php echo $homeDir;?>js/libs/jquery-3.3.1.js" async></script>
+<script type="text/javascript" src="/js/libs/jquery-3.3.1.js" async></script>
 <?php endif ?>

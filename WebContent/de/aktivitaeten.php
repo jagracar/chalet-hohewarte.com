@@ -1,6 +1,5 @@
 <?php
 // General php variables
-$homeDir = '../';
 $page = 'aktivitaeten';
 $keywords = 'Aktivitäten, Sommer, Winter';
 $descriptionText = 'Aktivitäten Chalet Hohe Warte in Neukirchen am Großvenediger';
@@ -13,7 +12,7 @@ $addJQuery = false;
 <html lang="de">
 <head>
 <?php require 'head.php';?>
-<script src="<?php echo $homeDir;?>js/location-map.js" async></script>
+<script type="text/javascript" src="/js/location-map.js" async></script>
 </head>
 
 <body>
@@ -54,6 +53,5 @@ $addJQuery = false;
 
 	<!-- Footer -->
 <?php require 'footer.php';?>
-
 </body>
 </html>

@@ -1,6 +1,5 @@
 <?php
 // General php variables
-$homeDir = '../';
 $page = 'buchen';
 $keywords = 'Buchen, Preis';
 $descriptionText = 'Buchen Chalet Hohe Warte in Neukirchen am Großvenediger';
@@ -33,7 +32,8 @@ $addJQuery = false;
 
 			<a class="reservation-link"
 				href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/wildkogel-arena/zillertal-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-691.html"
-				target="_blank" rel="noopener"><strong>Reservieren Sie bei Chaletsplus.com</strong></a>
+				target="_blank" rel="noopener"><strong>Reservieren Sie bei
+					Chaletsplus.com</strong></a>
 		</section>
 
 		<section>
@@ -43,7 +43,8 @@ $addJQuery = false;
 
 			<a class="reservation-link"
 				href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/zillertal-arena/wildkogel-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-2-694.html"
-				target="_blank" rel="noopener"><strong>Reservieren Sie bei Chaletsplus.com</strong></a>
+				target="_blank" rel="noopener"><strong>Reservieren Sie bei
+					Chaletsplus.com</strong></a>
 		</section>
 
 		<section>
@@ -53,13 +54,13 @@ $addJQuery = false;
 
 			<a class="reservation-link"
 				href="https://www.chaletsplus.com/de/chalet/neukirchen-am-grossvenediger/zillertal-arena/wildkogel-arena/kitzbuhler-alpen/nationalpark-chalet-hohe-warte-1-693.html"
-				target="_blank" rel="noopener"><strong>Reservieren Sie bei Chaletsplus.com</strong></a>
+				target="_blank" rel="noopener"><strong>Reservieren Sie bei
+					Chaletsplus.com</strong></a>
 		</section>
 	</article>
 	</main>
 
 	<!-- Footer -->
 <?php require 'footer.php';?>
-
 </body>
 </html>

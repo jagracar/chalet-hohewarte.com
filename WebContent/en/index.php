@@ -1,7 +1,5 @@
 <?php
 // General php variables
-$homeDir = '../';
-$picturesDir = '../pictures/';
 $page = 'home';
 $keywords = 'index, home page';
 $descriptionText = 'Home page of Chalet Hohe Warte in Neukirchen am Großvenediger';
@@ -14,7 +12,7 @@ $addJQuery = true;
 <html lang="en">
 <head>
 <?php require 'head.php';?>
-<script src="<?php echo $homeDir;?>js/slideshowAnimation.js" async></script>
+<script type="text/javascript" src="/js/slideshowAnimation.js" async></script>
 </head>
 
 <body>
@@ -31,28 +29,34 @@ $addJQuery = true;
 		<figure>
 			<div class="slideshow-container">
 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/a1_terrace_2.jpg">
-    				<img src="<?php echo $picturesDir;?>large/a1_terrace_2.jpg"> 
-    			</picture>
- 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/a1_livingroom_1.jpg">
-    				<img src="<?php echo $picturesDir;?>large/a1_livingroom_1.jpg">
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/a1_terrace_2.jpg">
+    				<img src="/pictures/large/a1_terrace_2.jpg">
     			</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/a1_bedroom_terrace_1.jpg">
-	    			<img src="<?php echo $picturesDir;?>large/a1_bedroom_terrace_1.jpg"> 
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/a1_livingroom_1.jpg">
+    				<img src="/pictures/large/a1_livingroom_1.jpg">
     			</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/a1_livingroom_4.jpg">
-	    			<img src="<?php echo $picturesDir;?>large/a1_livingroom_4.jpg">
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/a1_bedroom_terrace_1.jpg">
+    				<img src="/pictures/large/a1_bedroom_terrace_1.jpg">
     			</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/a1_terrace_5.jpg">
-	     			<img src="<?php echo $picturesDir;?>large/a1_terrace_5.jpg"> 
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/a1_livingroom_4.jpg">
+    				<img src="/pictures/large/a1_livingroom_4.jpg">
     			</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="<?php echo $picturesDir;?>medium/mountains_2.jpg">
-	     			<img src="<?php echo $picturesDir;?>large/mountains_2.jpg"> 
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/a1_terrace_5.jpg">
+    				<img src="/pictures/large/a1_terrace_5.jpg">
+    			</picture>
+				<picture>
+    				<source media="(max-width: 480px)"
+    					srcset="/pictures/medium/mountains_2.jpg">
+    				<img src="/pictures/large/mountains_2.jpg">
     			</picture>
 			</div>
 		</figure>
@@ -85,6 +89,5 @@ $addJQuery = true;
 
 	<!-- Footer -->
 <?php require 'footer.php';?>
-
 </body>
 </html>

@@ -1,6 +1,5 @@
 <?php
 // General php variables
-$homeDir = '../';
 $page = 'description';
 $keywords = 'description';
 $descriptionText = 'Description of Chalet Hohe Warte in Neukirchen am Großvenediger';
@@ -70,6 +69,5 @@ $addJQuery = false;
 
 	<!-- Footer -->
 <?php require 'footer.php';?>
-
 </body>
 </html>

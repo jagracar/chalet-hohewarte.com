@@ -1,6 +1,5 @@
 <?php
 // General php variables
-$homeDir = '../';
 $page = 'contact';
 $keywords = 'contact, address, telephone';
 $descriptionText = 'Contact information of Chalet Hohe Warte in Neukirchen am Großvenediger';
@@ -13,7 +12,7 @@ $addJQuery = false;
 <html lang="en">
 <head>
 <?php require 'head.php';?>
-<script src="<?php echo $homeDir;?>js/location-map.js" async></script>
+<script type="text/javascript" src="/js/location-map.js" async></script>
 </head>
 
 <body>
@@ -80,6 +79,5 @@ $addJQuery = false;
 
 	<!-- Footer -->
 <?php require 'footer.php';?>
-
 </body>
 </html>
