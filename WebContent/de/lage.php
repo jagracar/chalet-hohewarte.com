@@ -1,10 +1,10 @@
 <?php
 // General php variables
-$page = 'kontakt';
-$keywords = 'Kontakt, Adresse, Telefon';
-$descriptionText = 'Kontakt Chalet Hohe Warte in Neukirchen am Großvenediger';
-$titleText = 'Kontakt - Chalet Hohe Warte in Neukirchen am Großvenediger';
-$alternative = 'contact.php';
+$page = 'lage';
+$keywords = 'Lage, Kontakt, Adresse, Telefon';
+$descriptionText = 'Lage Chalet Hohe Warte in Neukirchen am Großvenediger';
+$titleText = 'Lage - Chalet Hohe Warte in Neukirchen am Großvenediger';
+$alternative = 'location.php';
 $addLeaflet = true;
 $addJQuery = false;
 ?>
@@ -23,14 +23,14 @@ $addJQuery = false;
 	<main class="main-container">
 	<article class="content">
 		<header>
-			<h2>Kontakt</h2>
+			<h2>Lage</h2>
 		</header>
 
 		<p>Das Chalet befindet sich in einer idyllischen Umgebung mit freiem
 			Blick auf die Gletscher der Hohen Tauern am Südhang der Kitzbühler
 			Alpen in Neukirchen am Großvenediger (Oberpinzgau, Salzburger Land).
 			Es ist gemütlich im Stil Alpin modern eingerichtet und verfügt auf
-			170 qm über 5 Schlafzimmer, 4 Bäder, 2 Küchen, Sauna, Skistall und
+			175 qm über 5 Schlafzimmer, 4 Bäder, 2 Küchen, Sauna, Skistall und
 			beheizter Freisitz für bis zu 12 Personen. Mit Parkmöglichkeit für 3
 			PKW.</p>
 
@@ -62,16 +62,16 @@ $addJQuery = false;
 
 			<p>Flughafen:</p>
 			<ul>
-				<li>Innsbruck (ca. 107 km)</li>
-				<li>Salzburg (ca. 138 km)</li>
-				<li>München (ca. 229 km)</li>
+				<li>Innsbruck (ca. 107 km).</li>
+				<li>Salzburg (ca. 138 km).</li>
+				<li>München (ca. 229 km).</li>
 			</ul>
 
 			<p>Bahnhof:</p>
 			<ul>
-				<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums)</li>
-				<li>Wald im Pinzgau (etwa 5 km)</li>
-				<li>Mittersill (etwa 18 km)</li>
+				<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums).</li>
+				<li>Wald im Pinzgau (etwa 5 km).</li>
+				<li>Mittersill (etwa 18 km).</li>
 			</ul>
 		</section>
 	</article>

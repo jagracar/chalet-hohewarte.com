@@ -76,13 +76,13 @@ $addJQuery = true;
 		<p>Was bietet Ihnen das Chaletdorf:</p>
 		<ul>
 			<li>All-inclusive-Service, Reinigung, Bettwäsche, Handtücher
-				und Brötchenservice</li>
-			<li>Rezeption, Restaurant und Bar</li>
-			<li>Spiel- und Grillplatz </li>
-			<li>Schwimmen im Naturteich</li>
-			<li>Ski- und Fahrradverleih</li>
+				und Brötchenservice.</li>
+			<li>Rezeption, Restaurant und Bar.</li>
+			<li>Spiel- und Grillplatz.</li>
+			<li>Schwimmen im Naturteich.</li>
+			<li>Ski- und Fahrradverleih.</li>
 			<li>Skipiste mit eigenem Skilift und direkter Anbindung an die
-				Wildkogel-Arena (Ski-in Ski-out, 170m zu Fuß zur Piste)</li>
+				Wildkogel-Arena (Ski-in Ski-out, 170m zu Fuß zur Piste).</li>
 		</ul>
 	</article>
 	</main>

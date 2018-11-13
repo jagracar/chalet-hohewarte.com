@@ -57,11 +57,11 @@ $addJQuery = false;
 			<h3>Extras</h3>
 
 			<ul>
-				<li>Handtücher vorhanden</li>
-				<li>Betten bezogen</li>
-				<li>Kaminholz verfügbar</li>
-				<li>Haustiere nicht erlaubt</li>
-				<li>Familienfreundlich (Hochstuhl, Kinderbett, usw.)</li>
+				<li>Handtücher vorhanden.</li>
+				<li>Betten bezogen.</li>
+				<li>Kaminholz verfügbar.</li>
+				<li>Haustiere nicht erlaubt.</li>
+				<li>Familienfreundlich (Hochstuhl, Kinderbett, usw.).</li>
 			</ul>
 		</section>
 	</article>

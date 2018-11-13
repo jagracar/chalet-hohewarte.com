@@ -6,6 +6,7 @@
 	width: 100%;
 	height: 50vmin;
 	max-height: 400px;
+	margin: 2em 0 3em 0;
 }
 
 
@@ -14,6 +15,7 @@
 @media (max-width: $S) {
 	.map-container {
 		width: calc(100% + #{2 * $container-sides-padding-lowres});
+		height: 80vmin;
 		margin-left: -$container-sides-padding-lowres;
 	}
 }

@@ -86,22 +86,6 @@ $addJQuery = true;
     					</picture>
 						<figcaption>Living room, view 4.</figcaption>
 					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_livingroom_5.jpg">
-    						<img src="/pictures/medium/a1_livingroom_5.jpg"	alt="Kitchen, view 1" />
-    					</picture>
-						<figcaption>Kitchen, view 1.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_livingroom_6.jpg">
-    						<img src="/pictures/medium/a1_livingroom_6.jpg" alt="Kitchen, view 2" />
-    					</picture>
-						<figcaption>Kitchen, view 2.</figcaption>
-					</figure>
 				</div>
 			</section>
 
@@ -146,26 +130,18 @@ $addJQuery = true;
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_bedroom3_1.jpg">
-    						<img src="/pictures/medium/a1_bedroom3_1.jpg" alt="Bedroom 3, view 1" />
+    							srcset="/pictures/small/a1_bedroom3_2.jpg">
+    						<img src="/pictures/medium/a1_bedroom3_2.jpg" alt="Bedroom 3, view 1" />
     					</picture>
 						<figcaption>Bedroom 3, view 1.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_bedroom3_2.jpg">
-    						<img src="/pictures/medium/a1_bedroom3_2.jpg" alt="Bedroom 3, view 2" />
+    							srcset="/pictures/small/a1_bedroom3_3.jpg">
+    						<img src="/pictures/medium/a1_bedroom3_3.jpg" alt="Bedroom 3, view 2" />
     					</picture>
 						<figcaption>Bedroom 3, view 2.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_bedroom3_3.jpg">
-    						<img src="/pictures/medium/a1_bedroom3_3.jpg" alt="Bedroom 3, view 3" />
-    					</picture>
-						<figcaption>Bedroom 3, view 3.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
@@ -182,14 +158,6 @@ $addJQuery = true;
     						<img src="/pictures/medium/a1_bedroom_terrace_2.jpg" alt="Terrace from bedrooms 1 and 2, view 2" />
     					</picture>
 						<figcaption>Terrace from bedrooms 1 and 2, view 2.</figcaption>
-					</figure>
-					<figure class="vertical-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_bedroom_terrace_3.jpg">
-    						<img src="/pictures/medium/a1_bedroom_terrace_3.jpg" alt="Terrace from bedrooms 1 and 2, view 3" />
-    					</picture>
-						<figcaption>Terrace from bedrooms 1 and 2, view 3.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -215,14 +183,6 @@ $addJQuery = true;
     						<img src="/pictures/medium/a1_sauna_2.jpg" alt="Sauna, view 2" />
 						</picture>
 						<figcaption>Sauna, view 2.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_sauna_3.jpg">
-    						<img src="/pictures/medium/a1_sauna_3.jpg" alt="Sauna, view 3" />
-						</picture>
-						<figcaption>Sauna, view 3.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -289,14 +249,6 @@ $addJQuery = true;
 						</picture>
 						<figcaption>Terrace, view 7.</figcaption>
 					</figure>
-					<figure class="vertical-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a1_terrace_8.jpg">
-    						<img src="/pictures/medium/a1_terrace_8.jpg" alt="Terrace, view 8" />
-						</picture>
-						<figcaption>Terrace, view 8.</figcaption>
-					</figure>
 				</div>
 			</section>
 		</section>
@@ -323,34 +275,10 @@ $addJQuery = true;
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_livingroom_2.jpg">
-    						<img src="/pictures/medium/a2_livingroom_2.jpg"	alt="Living room, view 2" />
+    							srcset="/pictures/small/a2_livingroom_4.jpg">
+    						<img src="/pictures/medium/a2_livingroom_4.jpg"	alt="Living room, view 2" />
     					</picture>
 						<figcaption>Living room, view 2.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_livingroom_3.jpg">
-    						<img src="/pictures/medium/a2_livingroom_3.jpg"	alt="Living room, view 3" />
-    					</picture>
-						<figcaption>Living room, view 3.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_livingroom_4.jpg">
-    						<img src="/pictures/medium/a2_livingroom_4.jpg"	alt="Living room, view 4" />
-    					</picture>
-						<figcaption>Living room, view 4.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_livingroom_5.jpg">
-    						<img src="/pictures/medium/a2_livingroom_5.jpg" alt="Kitchen view" />
-						</picture>
-						<figcaption>Kitchen.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -373,25 +301,17 @@ $addJQuery = true;
 						<picture>
     						<source media="(max-width: 480px)"
     							srcset="/pictures/small/a2_bedroom2_1.jpg">
-    						<img src="/pictures/medium/a2_bedroom2_1.jpg" alt="Bedroom 2, view 1" />
+    						<img src="/pictures/medium/a2_bedroom2_1.jpg" alt="Bedroom 2 view" />
     					</picture>
-						<figcaption>Bedroom 2, view 1.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_bedroom2_2.jpg">
-    						<img src="/pictures/medium/a2_bedroom2_2.jpg" alt="Bedroom 2, view 2" />
-    					</picture>
-						<figcaption>Bedroom 2, view 2.</figcaption>
+						<figcaption>Bedroom 2.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
     							srcset="/pictures/small/a2_toilet.jpg">
-    						<img src="/pictures/medium/a2_toilet.jpg" alt="Toilet view" />
+    						<img src="/pictures/medium/a2_toilet.jpg" alt="Bathroom view" />
     					</picture>
-						<figcaption>Toilet.</figcaption>
+						<figcaption>Bathroom.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -405,50 +325,26 @@ $addJQuery = true;
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_1.jpg">
-    						<img src="/pictures/medium/a2_terrace_1.jpg" alt="Terrace, view 1" />
+    							srcset="/pictures/small/a2_terrace_2.jpg">
+    						<img src="/pictures/medium/a2_terrace_2.jpg" alt="Terrace, view 1" />
 						</picture>
 						<figcaption>Terrace, view 1.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_2.jpg">
-    						<img src="/pictures/medium/a2_terrace_2.jpg" alt="Terrace, view 2" />
+    							srcset="/pictures/small/a2_terrace_4.jpg">
+    						<img src="/pictures/medium/a2_terrace_4.jpg" alt="Terrace, view 2" />
 						</picture>
 						<figcaption>Terrace, view 2.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
     						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_3.jpg">
-    						<img src="/pictures/medium/a2_terrace_3.jpg" alt="Terrace, view 3" />
+    							srcset="/pictures/small/a2_terrace_5.jpg">
+    						<img src="/pictures/medium/a2_terrace_5.jpg" alt="Terrace, view 3" />
 						</picture>
 						<figcaption>Terrace, view 3.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_4.jpg">
-    						<img src="/pictures/medium/a2_terrace_4.jpg" alt="Terrace, view 4" />
-						</picture>
-						<figcaption>Terrace, view 4.</figcaption>
-					</figure>
-					<figure class="horizontal-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_5.jpg">
-    						<img src="/pictures/medium/a2_terrace_5.jpg" alt="Terrace, view 5" />
-						</picture>
-						<figcaption>Terrace, view 5.</figcaption>
-					</figure>
-					<figure class="vertical-figure">
-						<picture>
-    						<source media="(max-width: 480px)"
-    							srcset="/pictures/small/a2_terrace_6.jpg">
-    						<img src="/pictures/medium/a2_terrace_6.jpg" alt="Terrace, view 6" />
-						</picture>
-						<figcaption>Terrace, view 6.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -463,50 +359,26 @@ $addJQuery = true;
 				<figure class="horizontal-figure">
 					<picture>
     					<source media="(max-width: 480px)"
-    						srcset="/pictures/small/mountains_1.jpg">
-    					<img src="/pictures/medium/mountains_1.jpg" alt="Mountains, view 1" />
+    						srcset="/pictures/small/mountains_2.jpg">
+    					<img src="/pictures/medium/mountains_2.jpg" alt="Mountains, view 1" />
 					</picture>
 					<figcaption>Mountains, view 1.</figcaption>
-				</figure>
-				<figure class="horizontal-figure">
-					<picture>
-    					<source media="(max-width: 480px)"
-    						srcset="/pictures/small/mountains_2.jpg">
-    					<img src="/pictures/medium/mountains_2.jpg" alt="Mountains, view 2" />
-					</picture>
-					<figcaption>Mountains, view 2.</figcaption>
 				</figure>
 				<figure class="vertical-figure">
 					<picture>
     					<source media="(max-width: 480px)"
     						srcset="/pictures/small/mountains_3.jpg">
-    					<img src="/pictures/medium/mountains_3.jpg" alt="Mountains, view 3" />
+    					<img src="/pictures/medium/mountains_3.jpg" alt="Mountains, view 2" />
 					</picture>
-					<figcaption>Mountains, view 3.</figcaption>
-				</figure>
-				<figure class="horizontal-figure">
-					<picture>
-    					<source media="(max-width: 480px)"
-    						srcset="/pictures/small/mountains_4.jpg">
-    					<img src="/pictures/medium/mountains_4.jpg" alt="Mountains, view 4" />
-					</picture>
-					<figcaption>Mountains, view 4.</figcaption>
-				</figure>
-				<figure class="horizontal-figure">
-					<picture>
-    					<source media="(max-width: 480px)"
-    						srcset="/pictures/small/mountains_5.jpg">
-    					<img src="/pictures/medium/mountains_5.jpg" alt="Mountains, view 5" />
-					</picture>
-					<figcaption>Mountains, view 5.</figcaption>
+					<figcaption>Mountains, view 2.</figcaption>
 				</figure>
 				<figure class="horizontal-figure">
 					<picture>
     					<source media="(max-width: 480px)"
     						srcset="/pictures/small/mountains_6.jpg">
-    					<img src="/pictures/medium/mountains_6.jpg" alt="Mountains, view 6" />
+    					<img src="/pictures/medium/mountains_6.jpg" alt="Mountains, view 3" />
 					</picture>
-					<figcaption>Mountains, view 6.</figcaption>
+					<figcaption>Mountains, view 3.</figcaption>
 				</figure>
 			</div>
 		</section>

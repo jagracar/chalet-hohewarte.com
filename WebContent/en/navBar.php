@@ -20,7 +20,7 @@ function addActiveItemClass($pageName) {
     			<li><a href="description.php" class="nav-item<?php addActiveItemClass('description');?>">Description</a></li>
     			<li><a href="pictures.php" class="nav-item<?php addActiveItemClass('pictures');?>">Pictures</a></li>
     			<li><a href="activities.php" class="nav-item<?php addActiveItemClass('activities');?>">Activities</a></li>
-    			<li><a href="contact.php" class="nav-item<?php addActiveItemClass('contact');?>">Contact</a></li>
+    			<li><a href="location.php" class="nav-item<?php addActiveItemClass('location');?>">Location</a></li>
     			<li><a href="reservations.php" class="nav-item<?php addActiveItemClass('reservations');?>">Reservations</a></li>
     		</ul>
     	</nav>
