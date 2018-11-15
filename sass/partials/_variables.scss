@@ -1,24 +1,24 @@
 // Media queries breakpoint variables
 $S:  480px; // 30em for 16px body font
-$M:  816px; // 51em for 16px body font
+$M:  928px; // 58em for 16px body font
 $L: 1440px; // 90em for 16px body font
 
 // Size variables
-$nav-padding: 0.3em;
+$nav-padding: 0.25em;
 $nav-margin: 0;
 $nav-header-width: 12em;
 $nav-item-border: 0.05em;
-$nav-item-padding: 0.4em 0.7em;
-$nav-item-padding-with-border: 0.35em 0.65em;
+$nav-item-padding: 0.2em 0.7em;
+$nav-item-padding-with-border: 0.15em 0.65em;
 $container-sides-padding: 10%;
 $container-sides-padding-lowres: 5%;
 $main-container-top-padding: 2.5em;
-$picture-padding: 0.7em;
-$picture-padding-lowres: 0.2em;
+$picture-padding: 0.4em;
+$picture-padding-lowres: 0.15em;
 
 // Color variables
 $alpha: 0.96;
-$general-text-color: lighten(black, 20%);
+$general-text-color: lighten(black, 35%);
 $shadow-color: lighten(black, 60%);
 $header-color: lighten(black, 40%);
 $link-color: lighten(blue, 20%);
@@ -39,6 +39,7 @@ $reservation-link-hover-color: $nav-item-hover-color;
 $reservation-link-bg-color: rgb(21, 126, 200);
 $reservation-link-hover-bg-color: lighten($reservation-link-bg-color, 10%);
 $footer-color: lighten($general-text-color, 20%);
+$footer-bg-color: darken(white, 2%);
 $footer-border-color: darken(white, 20%);
 
 // Other variables

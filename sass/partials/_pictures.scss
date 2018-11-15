@@ -17,8 +17,7 @@
 	}
 
 	figcaption {
-		padding-top: 0.5em;
-		min-height: 3em;
+		padding: 0.5em;
 	}
 
 	img {
@@ -57,8 +56,7 @@
 	}
 
 	figcaption {
-		padding-top: 0.5em;
-		min-height: 3em;
+		padding: 0.5em;
 	}
 
 	img {
@@ -91,10 +89,6 @@
 	.pictures-container {
 		figure {
 			padding: $picture-padding-lowres;
-		}
-
-		figcaption {
-			padding: 0.5em;
 		}
 	}
 }

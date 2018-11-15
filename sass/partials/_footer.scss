@@ -4,14 +4,18 @@
 
 .footer-container {
 	padding: 0 $container-sides-padding;
+	border-top: 1px dotted $footer-border-color;
+	background: $footer-bg-color;
+	font-size: 0.9em;
 }
 
 .footer-content {
-	border-top: 1px dotted $footer-border-color;
 	color: $footer-color;
+	overflow: auto;
 }
 
 .footer-cute-sentence {
+	margin-top: 0;
 	float: right;
 }
 

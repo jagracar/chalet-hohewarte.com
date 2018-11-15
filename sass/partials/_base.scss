@@ -8,8 +8,8 @@
 
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 0.9em;
-	line-height: 1.4;
+	font-size: 1em;
+	line-height: 1.45;
 	color: $general-text-color;
 }
 
@@ -36,19 +36,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 2.6em;
+	font-size: 2.4em;
 
 	@media (max-width: $M) {
-		font-size: 2.2em;
+		font-size: 2.0em;
 	}
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
-h4 {
-	font-size: 1.2em;
+h4, h5, h6 {
+	font-size: 1.3em;
 }
 
 p {
@@ -59,6 +59,6 @@ figure {
 	margin: 0;
 }
 
-section {
+section, article {
 	margin-bottom: 3em;
 }

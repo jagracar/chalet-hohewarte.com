@@ -261,9 +261,9 @@ template {
 
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
-  line-height: 1.4;
-  color: #333333;
+  font-size: 1em;
+  line-height: 1.45;
+  color: #595959;
 }
 
 a {
@@ -286,20 +286,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2.6em;
+  font-size: 2.4em;
 }
-@media (max-width: 816px) {
+@media (max-width: 928px) {
   h2 {
-    font-size: 2.2em;
+    font-size: 2.0em;
   }
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
-h4 {
-  font-size: 1.2em;
+h4, h5, h6 {
+  font-size: 1.3em;
 }
 
 p {
@@ -310,7 +310,7 @@ figure {
   margin: 0;
 }
 
-section {
+section, article {
   margin-bottom: 3em;
 }
 
@@ -367,7 +367,7 @@ body {
       flex: 0 0 auto;
 }
 
-@media (max-width: 816px) {
+@media (max-width: 928px) {
   .nav-header {
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
@@ -375,14 +375,14 @@ body {
 
   .nav-menu-wrapper {
     position: absolute;
-    top: 0.3em;
+    top: 0.25em;
     left: 0;
   }
 
   .nav-lang-wrapper {
     position: absolute;
-    top: 0.3em;
-    right: 0.3em;
+    top: 0.25em;
+    right: 0.25em;
   }
 }
 /*
@@ -390,7 +390,7 @@ body {
  */
 .nav-container {
   width: 100%;
-  padding: 0.3em;
+  padding: 0.25em;
   margin: 0;
   background: linear-gradient(to right, rgba(26, 26, 26, 0.96), rgba(64, 64, 64, 0.96) 30%, rgba(64, 64, 64, 0.96) 70%, rgba(26, 26, 26, 0.96));
   box-shadow: 0px 3px 3px rgba(102, 102, 102, 0.96);
@@ -415,7 +415,7 @@ body {
 
 .nav-item {
   display: block;
-  padding: 0.4em 0.7em;
+  padding: 0.2em 0.7em;
   border-radius: 3px;
   font-size: 1.0em;
   text-align: center;
@@ -444,16 +444,16 @@ body {
   background-color: #0096ff;
 }
 
-@media (max-width: 816px) {
+@media (max-width: 928px) {
   .nav-menu-wrapper:hover {
     width: 100%;
   }
 
   .is-menu-item {
     display: inline-block;
-    padding: 0.35em 0.65em;
+    padding: 0.15em 0.65em;
     border: 0.05em solid rgba(255, 255, 255, 0.1);
-    margin-left: 0.3em;
+    margin-left: 0.25em;
   }
   .nav-menu-wrapper:hover .is-menu-item {
     background-color: rgba(255, 255, 255, 0.3);
@@ -464,7 +464,7 @@ body {
   }
   .nav-menu-wrapper:hover .nav-menu-list {
     display: block;
-    margin-top: 0.3em;
+    margin-top: 0.25em;
     background: linear-gradient(to right, rgba(26, 26, 26, 0.96), rgba(64, 64, 64, 0.96) 30%, rgba(64, 64, 64, 0.96) 70%, rgba(26, 26, 26, 0.96));
   }
   .nav-menu-list li {
@@ -486,7 +486,7 @@ body {
 .reservation-link {
   display: inline-block;
   padding: 1em 1.5em;
-  margin: 1em;
+  margin: 1em 0;
   border-radius: 3px;
   text-align: center;
   color: #e6e6e6;
@@ -503,8 +503,7 @@ body {
   .main-container {
     padding: 2.5em 5% 0 5%;
   }
-}
-@media (max-width: 816px) {
+
   .reservation-link {
     display: table;
     margin-left: auto;
@@ -553,13 +552,12 @@ body {
   justify-items: center;
 }
 .pictures-container figure {
-  padding: 0.7em;
+  padding: 0.4em;
   background-color: #fafafa;
   box-shadow: 1px 3px 4px 1px #999999;
 }
 .pictures-container figcaption {
-  padding-top: 0.5em;
-  min-height: 3em;
+  padding: 0.5em;
 }
 .pictures-container img {
   width: 100%;
@@ -594,19 +592,18 @@ body {
   cursor: zoom-out;
 }
 .zoom-container figure {
-  padding: 0.7em;
+  padding: 0.4em;
   background-color: #fafafa;
 }
 .zoom-container figcaption {
-  padding-top: 0.5em;
-  min-height: 3em;
+  padding: 0.5em;
 }
 .zoom-container img {
   max-width: calc(100vw - 4em);
   max-height: calc(100vh - 10em);
 }
 
-@media (max-width: 816px) {
+@media (max-width: 928px) {
   .pictures-container {
     display: block;
   }
@@ -620,10 +617,7 @@ body {
 }
 @media (max-width: 480px) {
   .pictures-container figure {
-    padding: 0.2em;
-  }
-  .pictures-container figcaption {
-    padding: 0.5em;
+    padding: 0.15em;
   }
 }
 /*
@@ -633,7 +627,7 @@ body {
   width: 100%;
   height: 50vmin;
   max-height: 400px;
-  margin: 2em 0 3em 0;
+  margin: 2em 0 4em 0;
 }
 
 @media (max-width: 480px) {
@@ -648,14 +642,18 @@ body {
  */
 .footer-container {
   padding: 0 10%;
+  border-top: 1px dotted #cccccc;
+  background: #fafafa;
+  font-size: 0.9em;
 }
 
 .footer-content {
-  border-top: 1px dotted #cccccc;
-  color: #666666;
+  color: #8c8c8c;
+  overflow: auto;
 }
 
 .footer-cute-sentence {
+  margin-top: 0;
   float: right;
 }
 
