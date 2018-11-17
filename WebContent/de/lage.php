@@ -44,7 +44,9 @@ $addJQuery = false;
 		</figure>
 
 		<section>
-			<h3>Entfernung Städte und Dörfer ab Neukirchen</h3>
+			<header>
+				<h3>Entfernung Städte und Dörfer ab Neukirchen</h3>
+			</header>
 
 			<ul>
 				<li>Bramberg etwa 5 km.</li>
@@ -58,7 +60,9 @@ $addJQuery = false;
 		</section>
 
 		<section>
-			<h3>Verkehr ab Neukirchen</h3>
+			<header>
+				<h3>Verkehr ab Neukirchen</h3>
+			</header>
 
 			<p>Flughafen:</p>
 			<ul>

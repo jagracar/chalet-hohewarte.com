@@ -27,7 +27,9 @@ $addJQuery = false;
 		</header>
 
 		<section>
-			<h3>Winter</h3>
+			<header>
+				<h3>Winter</h3>
+			</header>
 
 			<p>
 				Ab 2019 entsteht auf dem Gelände ein Schlepplift und Sie haben Anschluss an das Skigebiet der <a
@@ -62,7 +64,9 @@ $addJQuery = false;
 		</section>
 
 		<section>
-			<h3>Sommer</h3>
+			<header>
+				<h3>Sommer</h3>
+			</header>
 
 			<p>
 				Der <a href="https://hohetauern.at/de">Nationalpark Hohe Tauern</a> ist ein großes Schutzgebiet im Alpenraum. Es
