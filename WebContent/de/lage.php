@@ -26,14 +26,6 @@ $addJQuery = false;
 			<h2>Lage</h2>
 		</header>
 
-		<p>Das Chalet befindet sich in einer idyllischen Umgebung mit freiem
-			Blick auf die Gletscher der Hohen Tauern am Südhang der Kitzbühler
-			Alpen in Neukirchen am Großvenediger (Oberpinzgau, Salzburger Land).
-			Es ist gemütlich im Stil Alpin modern eingerichtet und verfügt auf
-			175 qm über 5 Schlafzimmer, 4 Bäder, 2 Küchen, Sauna, Skistall und
-			beheizter Freisitz für bis zu 12 Personen. Mit Parkmöglichkeit für 3
-			PKW.</p>
-
 		<figure>
 			<div id="contact-map-container" class="map-container"></div>
 			<script>
@@ -59,19 +51,19 @@ $addJQuery = false;
 			</ul>
 		</section>
 
-		<section>
+		<section class="section-separator">
 			<header>
 				<h3>Verkehr ab Neukirchen</h3>
 			</header>
 
-			<p>Flughafen:</p>
+			<h4>Flughäfen</h4>
 			<ul>
 				<li>Innsbruck (ca. 107 km).</li>
 				<li>Salzburg (ca. 138 km).</li>
 				<li>München (ca. 229 km).</li>
 			</ul>
 
-			<p>Bahnhof:</p>
+			<h4>Bahnhöfe</h4>
 			<ul>
 				<li>Neukirchen am Großvenediger (in unmittelbarer Nähe des Zentrums).</li>
 				<li>Wald im Pinzgau (etwa 5 km).</li>

@@ -25,79 +25,38 @@ $addJQuery = false;
 			<h2>Beschreibung</h2>
 		</header>
 
-		<p>Das wunderschöne luxuriös ausgestattete Chalet (Hohe Warte) mit unverbautem Blick auf den Großvenediger und die
-			vielen Bergketten des Hohen Tauern ist mit viel Liebe zum Detail eingerichtet. Es bietet Platz für 12 Personen und
-			hat von der Aufteilung die Besonderheit, dass es zwei separate Eingänge hat und somit besteht die Möglichkeit, dass
-			sich zum Beispiel bei einer großen Gruppe von 12 Personen auch eine Familie mit kleinen Kindern, Ältere, die Ruhe
-			suchen, Jugendliche die für sich sein möchten, im unteren Bereich, in dem für 4 Personen Platz ist, zurückziehen
-			können. Da das Chalet über 2 Küchen verfügt, kann auch an 2 Küchen gleichzeitig gearbeitet werden. So ist es auch mit
-			den Waschküchen, bei 12 Personen kann auf verschiedenen Ebenen Wäsche gewaschen, getrocknet, gebügelt werden. Das
-			Chalet mit 3 PKW Stellplätzen erstreckt sich über 3 Etagen.</p>
+		<p>Das wunderschöne, luxuriös ausgestattete Chalet (Hohe Warte) ist mit viel Liebe zum Detail eingerichtet. Es bietet
+			Platz für 12 Personen und verfügt über 2 separate Eingänge. Das Chalet mit 3 PKW Stellplätzen erstreckt sich über 3
+			Etagen.</p>
 
-		<p>Die untere Etage (Hohe Warte 1) ist eine komplette Wohnung mit moderner vollausgestatteter Wohnküche
-			(Beispiel:Kaffeevollautomat, Geschirrspüler, Raclettegeschirr, Fondue für Käse und Fleisch), Wohn- und Esszimmer, 2
-			Schlafzimmer (eines davon mit gemütlichem Stockbett), Bad mit Badewanne und Dusche, Waschraum mit Trockner,
-			Waschmaschine, Bügelbrett und -eisen, Schrank und Abstellmöglichkeiten, Garderobe , 3 TV’s, wunderschöner Freisitz,
-			wobei auf Liegestühlen, Tisch mit 4 Stühlen, Sitzbank sich mit freiem Blick die Gletscher der Hohe Tauern beobachten
-			lassen. Hohe Warte 1 ist auch ideal für ein Paar mit und ohne Kinder allein zu mieten.</p>
+		<p>Die untere Etage (Hohe Warte 1) ist eine komplette Wohnung mit moderner, vollausgestatteter Wohnküche
+			(Kaffeevollautomat, Geschirrspüler, Raclettegeschirr, Fondue für Käse und Fleisch), Wohn-Essraum, 2 Schlafzimmern
+			(eines davon mit gemütlichem Stockbett), Bad mit Badewanne, Waschraum mit Trockner, Bügelbrett und Bügeleisen,
+			Schrank und Abstellmöglichkeiten, Garderobe und 3 TV’s. Beim Entspannen in der Badewanne können Sie den Blick auf ein
+			von der Künstlerin Patricia Karg gestaltetes Wandgemälde genießen, die auch eines der Schlafzimmer und die Küche mit
+			Ihren Werken bereichert hat. Im Außenbereich finden Sie einen wunderschönen Freisitz, von dem aus Sie auf
+			Liegestühlen, einem Tisch mit 4 Stühlen oder einer Sitzbank den wunderbaren Ausblick genießen können. Das Apartment
+			Hohe Warte 1 ist auch alleine zu mieten und ideal etwa für ein Paar mit oder ohne Kinder.</p>
 
-		<p>Die mittlere und obere Etage (Hohe Warte 2) , die max. 8 Personen Platz bietet, kann separat oder zusammen mit der
-			unteren Etage gemietet werden. Hier besticht ein sehr großzügiger Wohn- Essraum mit komplett ausgestatteter Küche
-			(Beispiel:Raclette-Geschirr, Käse- und Fleischfondues, Kaffeevollautomat), schönem integrierten Kamin, der sowohl
-			beim Essen als auch beim Ausruhen im Wohnzimmer einsehbar ist und großer anliegenden Terrasse mit Teilüberdachung,
-			Infrarotstrahlern, modernstem Weber-Grill, Liegen zum gemütlichen Geniessen des freien Blicks auf die Bergwelt. Eine
-			geräumige Sauna mit Dusche und Zugang zur Terrasse befindet sich weiter in diesem Stockwerk, sowie eine Toilette,
-			Gadarobe mit großzügigem Schrank und einem Vorratsraum, wo Koffer, Kinderwagen und verschiedenes Platz haben kann. Im
-			oberen Stock befindet sich 3 Schafzimmer (1 Schlafzimmer mit Bad en suite, 1 Schlafzimmer mit Doppelbett, 1
-			Schalfzimmer mit Doppelbett und Stockbett) und 2 Bäder mit Dusche, 1 Abstellraum mit Waschmaschine und Trockner.
-			4TV’s, Spielesammlungen, Filmesammlung, bluetooth können zur Gestaltung eines gemütlichen Ausgangs eines erfüllten
-			Ski- oder Wandertages sorgen.</p>
+		<p>Die mittlere und obere Etage (Hohe Warte 2), die max. 8 Personen Platz bietet, kann separat oder zusammen mit der
+			unteren Etage gemietet werden. Hier besticht ein sehr großzügiger Wohn-Essraum mit komplett ausgestatteter Küche
+			(Kaffeevollautomat, Geschirrspüler, Raclettegeschirr, Fondue für Käse und Fleisch) und einem schönen integrierten
+			Kamin, der sowohl beim Essen als auch beim Ausruhen im Wohnzimmer einsehbar ist. Eine separate Toilette, eine
+			geräumige Sauna mit Dusche und Zugang zur Terrasse befinden sich ebenfalls im Erdgeschoss. Zwei Garderoben, ein
+			großzügiger Schrank und ein Vorratsraum bieten ausreichend Platz für Ihre Jacken, Schuhe oder Koffer. Die sich rund
+			um das Haus erstreckende Terrasse mit einem großen Tisch, Teilüberdachung, modernstem Weber-Grill und zwei
+			Sonnen-Liegen lädt zum Verweilen ein - dank Heizstrahlern auch im Winter. Wenn Sie mit Kindern zu uns kommen, stehen
+			Ihnen Kinderbett und Hochstuhl zur Verfügung.</p>
 
-		<section>
-			<header>
-				<h3>Skiraum im Chalet</h3>
-			</header>
+		<p>Im oberen Stock befinden sich 3 Schafzimmer und 2 Badezimmer mit Dusche (1 Schlafzimmer mit Bad en suite, 1
+			Schlafzimmer mit Doppelbett, 1 Schlafzimmer mit Doppel- und Stockbett). Ein Balkon mit Sitzgelegenheiten grenzt an
+			zwei der Schlafzimmer an und bieten Ihnen den bereits beschriebenen grandiosen Ausblick. Weiter zur Gestaltung eines
+			gemütlichen Ausgangs Ihres Ski- oder Wandertages sorgen 4TV’s, Spielesammlungen, eine Filmesammlung, und ein
+			Multimedia-Player. Schließlich steht Ihnen ein Abstellraum mit Waschmaschine und Trockner, Bügelbrett und Bügeleisen
+			zur Verfügung.</p>
 
-			<p>Ein beheizter Skiraum mit Schuhtrockner ermöglicht bequemes Anziehen und Trocknen der Sportausrüstung.</p>
-		</section>
+		<a class="reservation-link" href="buchen.php"><strong>Jetzt Buchen!</strong></a>
 
-		<section>
-			<header>
-				<h3>Waschküche</h3>
-			</header>
-
-			<p>Waschmaschine, Trockner, Bügelbrett mit Bügeleisen und Wäscheständer.</p>
-		</section>
-
-		<section>
-			<header>
-				<h3>Terrasse und Balkon</h3>
-			</header>
-
-			<p>Großzügiger Balkon und Sonnenterrasse mit unverbautem Blick auf die Bergwelt.</p>
-		</section>
-
-		<section>
-			<header>
-				<h3>Freisitz</h3>
-			</header>
-
-			<p>Beheizbarer Freisitz mit Grillmöglichkeit für gemütliches Beisammensein.</p>
-		</section>
-
-		<section>
-			<header>
-				<h3>Extras</h3>
-			</header>
-
-			<ul>
-				<li>Handtücher vorhanden.</li>
-				<li>Betten bezogen.</li>
-				<li>Kaminholz verfügbar.</li>
-				<li>Haustiere nicht erlaubt.</li>
-				<li>Familienfreundlich (Hochstuhl, Kinderbett, usw.).</li>
-			</ul>
-		</section>
 	</article>
 	</main>
 

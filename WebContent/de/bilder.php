@@ -43,7 +43,7 @@ $addJQuery = true;
 			</div>
 		</section>
 
-		<section>
+		<section class="section-separator">
 			<header>
 				<h3>Wohnung 1</h3>
 			</header>
@@ -115,9 +115,9 @@ $addJQuery = true;
 						<picture>
     						<source media="(max-width: 480px)"
     							srcset="/pictures/small/a1_bedroom1_3.jpg">
-    						<img src="/pictures/medium/a1_bedroom1_3.jpg" alt="Schlafzimmer 1 Toilette Blick" />
+    						<img src="/pictures/medium/a1_bedroom1_3.jpg" alt="Schlafzimmer 1, Toilette Blick" />
     					</picture>
-						<figcaption>Schlafzimmer 1 Toilette.</figcaption>
+						<figcaption>Schlafzimmer 1, Toilette.</figcaption>
 					</figure>
 					<figure class="horizontal-figure">
 						<picture>
@@ -253,7 +253,7 @@ $addJQuery = true;
 			</section>
 		</section>
 
-		<section>
+		<section class="section-separator">
 			<header>
 				<h3>Wohnung 2</h3>
 			</header>
@@ -350,9 +350,9 @@ $addJQuery = true;
 			</section>
 		</section>
 
-		<section>
+		<section class="section-separator">
 			<header>
-				<h3>Aussicht von die Terrassen</h3>
+				<h3>Aussicht von den Terrassen</h3>
 			</header>
 
 			<div class="pictures-container">

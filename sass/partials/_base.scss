@@ -48,11 +48,7 @@ h3 {
 }
 
 h4, h5, h6 {
-	font-size: 1.3em;
-}
-
-p {
-	max-width: 0.8 * $L;
+	font-size: 1.2em;
 }
 
 figure {
@@ -61,4 +57,8 @@ figure {
 
 section, article {
 	margin-bottom: 3em;
+
+	@media (max-width: $M) {
+		margin-bottom: 2em;
+	}
 }
