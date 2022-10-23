@@ -33,24 +33,24 @@ $addJQuery = true;
 					<img src="/pictures/large/a1_terrace_2.jpg">
 				</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_livingroom_1.jpg">
-					<img src="/pictures/large/a1_livingroom_1.jpg">
+					<source media="(max-width: 480px)" srcset="/pictures/medium/front_image_1.jpg">
+					<img src="/pictures/large/front_image_1.jpg">
 				</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_bedroom_terrace_1.jpg">
-					<img src="/pictures/large/a1_bedroom_terrace_1.jpg">
+					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_terrace_10.jpg">
+					<img src="/pictures/large/a1_terrace_10.jpg">
 				</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_livingroom_4.jpg">
-					<img src="/pictures/large/a1_livingroom_4.jpg">
+					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_livingroom_8.jpg">
+					<img src="/pictures/large/a1_livingroom_8.jpg">
 				</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_terrace_5.jpg">
-					<img src="/pictures/large/a1_terrace_5.jpg">
+					<source media="(max-width: 480px)" srcset="/pictures/medium/a1_terrace_12.jpg">
+					<img src="/pictures/large/a1_terrace_12.jpg">
 				</picture>
 				<picture>
-					<source media="(max-width: 480px)" srcset="/pictures/medium/mountains_2.jpg">
-					<img src="/pictures/large/mountains_2.jpg">
+					<source media="(max-width: 480px)" srcset="/pictures/medium/front_image_3.jpg">
+					<img src="/pictures/large/front_image_3.jpg">
 				</picture>
 			</div>
 		</figure>
